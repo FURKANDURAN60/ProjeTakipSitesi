@@ -1,0 +1,233 @@
+﻿@model ProjeTakipSitesi.Models.Personel.PersonelBilgileri
+
+@{
+    ViewBag.Title = "Personel Ekleme";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+
+    <div class="card mb-6">
+        <h5 class="card-header">PERSONEL EKLE</h5>
+        <div class="card-body pt-4">
+            <form id="formAccountSettings" method="POST" onsubmit="return false">
+                <div class="row g-6">
+                    <div class="col-md-6">
+                        @Html.LabelFor(model => model.PersonelGorseli, htmlAttributes: new { @class = "control-label col-md-6" })
+                        <div class="input-group input-group-merge">
+                            <span id="basic-icon-default-fullname2" class="input-group-text"><i class="icon-base bx bx-image-alt"></i></span>
+                            <input class="form-control" type="text" id="PersonelGorseli" name="PersonelGorseli" autofocus="">
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        @Html.LabelFor(model => model.AdSoyad, htmlAttributes: new { @class = "control-label col-md-6" })
+                        <div class="input-group input-group-merge">
+                            <span id="basic-icon-default-fullname2" class="input-group-text"><i class="icon-base bx bx-user"></i></span>
+                            <input class="form-control" type="text" id="AdSoyad" name="AdSoyad" autofocus="">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        @Html.LabelFor(model => model.Eposta, htmlAttributes: new { @class = "control-label col-md-6" })
+                        <div class="input-group input-group-merge">
+                            <span class="input-group-text"><i class="icon-base bx bx-envelope"></i></span>
+                            <input class="form-control" type="email" name="Eposta" id="Eposta">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        @Html.LabelFor(model => model.Departman, htmlAttributes: new { @class = "control-label col-md-6" })
+                        <div class="input-group input-group-merge">
+                            <span id="basic-icon-default-company2" class="input-group-text"><i class="icon-base bx bx-buildings"></i></span>
+                            <select name="Departman" class="form-select" required>
+                                <option value="" selected disabled>Departman Seçiniz</option>
+                                <option value="Yazılım">Yazılım</option>
+                                <option value="Satış">Satış</option>
+                                <option value="Pazarlama">Pazarlama</option>
+                                <option value="Yönetim">Yönetim</option>
+                                <option value="Üretim">Üretim</option>
+                                <option value="Satın Alma">Satın Alma</option>
+                                <option value="Kalite">Kalite</option>
+                                <option value="İnsan Kaynakları">İnsan Kaynakları</option>
+                                <option value="Muhasebe">Muhasebe</option>
+                                <option value="Finans">Finans</option>
+                                <option value="Hukuk">Hukuk</option>
+                                <option value="Depo">Depo</option>
+                                <option value="Bakım & Onarım">Bakım & Onarım</option>
+                                <option value="Ar-Ge">Ar-Ge</option>
+                                <option value="Müşteri Hizmetleri">Müşteri Hizmetleri</option>
+                                <option value="İdari İşler">İdari İşler</option>
+                                <option value="Tasarım">Tasarım</option>
+                                <option value="Güvenlik">Güvenlik</option>
+                                <option value="Temizlik">Temizlik</option>
+                                <option value="Diğer">Diğer</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        @Html.LabelFor(model => model.Gorev, htmlAttributes: new { @class = "control-label col-md-6" })
+                        <div class="input-group input-group-merge">
+                            <span id="basic-icon-default-company2" class="input-group-text"><i class="icon-base bx bx-briefcase"></i></span>
+                            <select name="Gorev" class="form-select" required>
+                                <option value="" selected disabled>Görev Seçiniz</option>
+                                <option value="Yazılım Geliştirici">Yazılım Geliştirici</option>
+                                <option value="Frontend Developer">Frontend Developer</option>
+                                <option value="Backend Developer">Backend Developer</option>
+                                <option value="Full Stack Developer">Full Stack Developer</option>
+                                <option value="Satış Temsilcisi">Satış Temsilcisi</option>
+                                <option value="Satış Müdürü">Satış Müdürü</option>
+                                <option value="Proje Yöneticisi">Proje Yöneticisi</option>
+                                <option value="İK Uzmanı">İK Uzmanı</option>
+                                <option value="Finans Uzmanı">Finans Uzmanı</option>
+                                <option value="Muhasebe Yetkilisi">Muhasebe Yetkilisi</option>
+                                <option value="Üretim Operatörü">Üretim Operatörü</option>
+                                <option value="Kalite Kontrol Sorumlusu">Kalite Kontrol Sorumlusu</option>
+                                <option value="Depo Sorumlusu">Depo Sorumlusu</option>
+                                <option value="Grafik Tasarımcı">Grafik Tasarımcı</option>
+                                <option value="Eğitim Uzmanı">Eğitim Uzmanı</option>
+                                <option value="BT Destek Uzmanı">BT Destek Uzmanı</option>
+                                <option value="Yönetici Asistanı">Yönetici Asistanı</option>
+                                <option value="Hukuk Danışmanı">Hukuk Danışmanı</option>
+                                <option value="Genel Müdür">Genel Müdür</option>
+                                <option value="Stajyer">Stajyer</option>
+                            </select>
+
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        @Html.LabelFor(model => model.TCNO, htmlAttributes: new { @class = "control-label col-md-6" })
+                        <div class="input-group input-group-merge">
+                            <span id="basic-icon-default-company2" class="input-group-text"><i class="icon-base bx bx-id-card"></i></span>
+                            <input class="form-control" type="text" id="TCNO" name="TCNO" autofocus="">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        @Html.LabelFor(model => model.Yetki, htmlAttributes: new { @class = "control-label col-md-6" })
+                        <div class="input-group input-group-merge">
+                            <span id="basic-icon-default-company2" class="input-group-text"><i class="icon-base bx bx-shield"></i></span>
+                            <select name="Yetki" class="form-select" required>
+                                <option value="" selected disabled>Yetki Seçiniz</option>
+                                <option value="Admin">Admin</option>
+                                <option value="Yönetici">Yönetici</option>
+                                <option value="Departman Sorumlusu">Departman Sorumlusu</option>
+                                <option value="Takım Lideri">Takım Lideri</option>
+                                <option value="Uzman">Uzman</option>
+                                <option value="Personel">Personel</option>
+                                <option value="Stajyer">Stajyer</option>
+                                <option value="Misafir">Misafir</option>
+                            </select>
+
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        @Html.LabelFor(model => model.TelNo, htmlAttributes: new { @class = "control-label col-md-6" })
+                        <div class="input-group input-group-merge">
+                            <span id="basic-icon-default-phone2" class="input-group-text"><i class="icon-base bx bx-phone"></i></span>
+                            <input class="form-control" type="text" id="TelNo" name="TelNo" autofocus="">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        @Html.LabelFor(model => model.Adres, htmlAttributes: new { @class = "control-label col-md-6" })
+                        <div class="input-group input-group-merge">
+                            <span id="basic-icon-default-phone2" class="input-group-text"><i class="icon-base bx bx-map"></i></span>
+                            <input class="form-control" type="text" id="Adres" name="Adres" autofocus="">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        @Html.LabelFor(model => model.DogumTarihi, htmlAttributes: new { @class = "control-label col-md-6" })
+                        <div class="input-group input-group-merge">
+                            <span id="basic-icon-default-phone2" class="input-group-text"><i class="icon-base bx bx-calendar"></i></span>
+                            <input class="form-control" type="datetime-local" id="DogumTarihi" name="DogumTarihi" autofocus="">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        @Html.LabelFor(model => model.IseGirisTarihi, htmlAttributes: new { @class = "control-label col-md-6" })
+                        <div class="input-group input-group-merge">
+                            <span id="basic-icon-default-phone2" class="input-group-text"><i class="icon-base bx bx-calendar-check"></i></span>
+                            <input class="form-control" type="datetime-local" id="IseGirisTarihi" name="IseGirisTarihi" autofocus="">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        @Html.LabelFor(model => model.Sifre, htmlAttributes: new { @class = "control-label col-md-6" })
+                        <div class="input-group input-group-merge">
+                            <span id="basic-icon-default-phone2" class="input-group-text"><i class="icon-base bx bx-lock-alt"></i></span>
+                            <input class="form-control" type="password" id="Sifre" name="Sifre" autofocus="">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        @Html.LabelFor(model => model.MedeniHal, htmlAttributes: new { @class = "control-label col-md-6" })
+                        <div class="input-group input-group-merge">
+                            <span id="basic-icon-default-phone2" class="input-group-text"><i class="icon-base bx bx-heart"></i></span>
+                            <select name="MedeniHal" class="form-select" required>
+                                <option value="" selected disabled>Medeni Hal Seçiniz</option>
+                                <option value="Bekar">Bekar</option>
+                                <option value="Evli">Evli</option>
+                            </select>
+
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        @Html.LabelFor(model => model.PozisyonAciklama, htmlAttributes: new { @class = "control-label col-md-6" })
+                        <div class="input-group input-group-merge">
+                            <span id="basic-icon-default-message2" class="input-group-text"><i class="icon-base bx bx-comment"></i></span>
+                            <input class="form-control" type="text" id="PozisyonAciklama" name="PozisyonAciklama" autofocus="">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        @Html.LabelFor(model => model.YakinBilgisi, htmlAttributes: new { @class = "control-label col-md-6" })
+                        <div class="input-group input-group-merge">
+                            <span id="basic-icon-default-phone2" class="input-group-text"><i class="icon-base bx bx-group"></i></span>
+                            <select name="YakinBilgisi" class="form-select" required>
+                                <option value="" selected disabled>Yakınlık Seçiniz</option>
+                                <option value="Eşi">Eşi</option>
+                                <option value="Annesi">Annesi</option>
+                                <option value="Babası">Babası</option>
+                                <option value="Kardeşi">Kardeşi</option>
+                                <option value="Çocuğu">Çocuğu</option>
+                                <option value="Teyzesi">Teyzesi</option>
+                                <option value="Dayısı">Dayısı</option>
+                                <option value="Amcası">Amcası</option>
+                                <option value="Halası">Halası</option>
+                                <option value="Kuzeni">Kuzeni</option>
+                                <option value="Yeğeni">Yeğeni</option>
+                                <option value="Arkadaşı">Arkadaş</option>
+                                <option value="Diğer">Diğer</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        @Html.LabelFor(model => model.YakinAdSoyad, htmlAttributes: new { @class = "control-label col-md-6" })
+                        <div class="input-group input-group-merge">
+                            <span id="basic-icon-default-phone2" class="input-group-text"><i class="icon-base bx bx-user-pin"></i></span>
+                            <input class="form-control" type="text" id="YakinAdSoyad" name="YakinAdSoyad" autofocus="">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        @Html.LabelFor(model => model.YakinTCNO, htmlAttributes: new { @class = "control-label col-md-6" })
+                        <div class="input-group input-group-merge">
+                            <span id="basic-icon-default-phone2" class="input-group-text"><i class="icon-base bx bx-id-card"></i></span>
+                            <input class="form-control" type="text" id="YakinTCNO" name="YakinTCNO" autofocus="">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        @Html.LabelFor(model => model.YakinTelNo, htmlAttributes: new { @class = "control-label col-md-6" })
+                        <div class="input-group input-group-merge">
+                            <span id="basic-icon-default-phone2" class="input-group-text"><i class="icon-base bx bx-phone-call"></i></span>
+                            <input class="form-control" type="text" id="YakinTelNo" name="YakinTelNo" autofocus="">
+                        </div>
+                    </div>
+                    <div class="mt-6">
+                        <button type="submit" class="btn btn-primary me-3">Personel Oluştur</button>
+                        <a href="/PersonelBilgileris/Index/" type="reset" class="btn btn-outline-secondary">Personel Listesine Dön</a>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+}
+
+

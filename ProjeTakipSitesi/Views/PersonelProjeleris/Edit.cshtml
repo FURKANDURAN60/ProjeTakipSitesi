@@ -1,0 +1,53 @@
+﻿@model ProjeTakipSitesi.Models.ProjeTakip.PersonelProjeleri
+@{
+    ViewBag.Title = "Edit";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<!-- jQuery kütüphanesi eklendi -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<form action="/PersonelProjeleris/Edit" method="post">
+    <input name="PersonelProjeId" value="@Model.PersonelProjeId" style="display:none" />
+    <div class="form-group">
+        <label>Proje Başlığı</label>
+        <input class="form-control" name="ProjeBaslik" type="text" placeholder="Lütfen Proje Başlığını Giriniz!"value="@Model.ProjeBaslik" />
+    </div>
+    <div class="form-group">
+        <label>Proje Açıklaması</label>
+        <input class="form-control" name="ProjeAciklama" type="text" placeholder="Lütfen Proje Açıklamasını Giriniz!" value="@Model.ProjeAciklama" />
+    </div>
+
+    <div class="form-group">
+        <input oninput="OraniDuzenle(this)" name="TamamlanmaOrani" value="@Model.TamamlanmaOrani" style="width:100%" type="range" min="1" max="100" />
+    </div>
+
+    <div class="col-md-12">
+        <span id="range-text" style="color:black; font-size:20px">@Model.TamamlanmaOrani</span>
+    </div>
+
+    <div class="col-md-6">
+        <label>Öncelik Durumu</label>
+        <div class="input-group input-group-merge">
+            <span id="basic-icon-default-company2" class="input-group-text"><i class="icon-base bx bx-buildings"></i></span>
+            <select name="OncelikDurumu" class="form-control" required>
+                <option value="@Model.OncelikDurumu" selected disabled>@Model.OncelikDurumu</option>
+                <option value="Yüksek Öncelikli">Yüksek Öncelikli</option>
+                <option value="Orta Öncelikli">Orta Öncelikli</option>
+                <option value="Düşük Öncelikli">Düşük Öncelikli</option>
+            </select>
+        </div>
+    </div>
+   
+    <div class="mt-2">
+        <button type="submit" class="btn btn-primary me-2">Proje Güncelle</button>
+        <a href="/PersonelProjeleris/Index/" class="btn btn-outline-secondary">Proje Listesine Geri Dön</a>
+    </div>
+</form>
+
+<script>
+    var text = document.getElementById("range-text")
+    function OraniDuzenle(element) {
+        text.innerHTML= element.value+ " % Tamamlandı."
+    }
+</script>

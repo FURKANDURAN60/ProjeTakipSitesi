@@ -1,0 +1,510 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\EntityFramework.6.5.1\build\EntityFramework.props" Condition="Exists('..\packages\EntityFramework.6.5.1\build\EntityFramework.props')" />
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{5C5C0392-16C1-4982-9D15-4DCD35FC99A1}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ProjeTakipSitesi</RootNamespace>
+    <AssemblyName>ProjeTakipSitesi</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <MvcBuildViews>false</MvcBuildViews>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort>44366</IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.5.1\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.5.1\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Abstractions" />
+    <Reference Include="System.Web.Routing" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="Microsoft.Web.Infrastructure, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.2.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http">
+    </Reference>
+    <Reference Include="System.Net.Http.WebRequest">
+    </Reference>
+    <Reference Include="System.Web.Helpers, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.9\lib\net45\System.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=5.2.9.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.5.2.9\lib\net45\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Optimization">
+      <HintPath>..\packages\Microsoft.AspNet.Web.Optimization.1.1.3\lib\net40\System.Web.Optimization.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Razor.3.2.9\lib\net45\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.9\lib\net45\System.Web.WebPages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Deployment, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.9\lib\net45\System.Web.WebPages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.9\lib\net45\System.Web.WebPages.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\packages\Newtonsoft.Json.13.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="WebGrease">
+      <Private>True</Private>
+      <HintPath>..\packages\WebGrease.1.6.0\lib\WebGrease.dll</HintPath>
+    </Reference>
+    <Reference Include="Antlr3.Runtime">
+      <Private>True</Private>
+      <HintPath>..\packages\Antlr.3.5.0.2\lib\Antlr3.Runtime.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Start\BundleConfig.cs" />
+    <Compile Include="App_Start\FilterConfig.cs" />
+    <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\GenelBakisController.cs" />
+    <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\PersonelBilgilerisController.cs" />
+    <Compile Include="Controllers\PersonelProjelerisController.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Models\DataContext\ProjeTakipDBContext.cs" />
+    <Compile Include="Models\Personel\PersonelBilgileri.cs" />
+    <Compile Include="Models\ProjeTakip\PersonelProjeleri.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\bootstrap-grid.css" />
+    <Content Include="Content\bootstrap-grid.min.css" />
+    <Content Include="Content\bootstrap-grid.rtl.css" />
+    <Content Include="Content\bootstrap-grid.rtl.min.css" />
+    <Content Include="Content\bootstrap-reboot.css" />
+    <Content Include="Content\bootstrap-reboot.min.css" />
+    <Content Include="Content\bootstrap-reboot.rtl.css" />
+    <Content Include="Content\bootstrap-reboot.rtl.min.css" />
+    <Content Include="Content\bootstrap-utilities.css" />
+    <Content Include="Content\bootstrap-utilities.min.css" />
+    <Content Include="Content\bootstrap-utilities.rtl.css" />
+    <Content Include="Content\bootstrap-utilities.rtl.min.css" />
+    <Content Include="Content\bootstrap.css" />
+    <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\bootstrap.rtl.css" />
+    <Content Include="Content\bootstrap.rtl.min.css" />
+    <Content Include="favicon.ico" />
+    <Content Include="Global.asax" />
+    <Content Include="Content\Site.css" />
+    <Content Include="projetemasi\assets\css\demo.css" />
+    <Content Include="projetemasi\assets\img\avatars\1.png" />
+    <Content Include="projetemasi\assets\img\avatars\2.png" />
+    <Content Include="projetemasi\assets\img\avatars\3.png" />
+    <Content Include="projetemasi\assets\img\avatars\4.png" />
+    <Content Include="projetemasi\assets\img\backgrounds\1.jpg" />
+    <Content Include="projetemasi\assets\img\elements\1.png" />
+    <Content Include="projetemasi\assets\img\elements\10.png" />
+    <Content Include="projetemasi\assets\img\elements\11.png" />
+    <Content Include="projetemasi\assets\img\elements\12.png" />
+    <Content Include="projetemasi\assets\img\elements\13.png" />
+    <Content Include="projetemasi\assets\img\elements\14.png" />
+    <Content Include="projetemasi\assets\img\elements\15.png" />
+    <Content Include="projetemasi\assets\img\elements\16.png" />
+    <Content Include="projetemasi\assets\img\elements\17.png" />
+    <Content Include="projetemasi\assets\img\elements\18.png" />
+    <Content Include="projetemasi\assets\img\elements\19.png" />
+    <Content Include="projetemasi\assets\img\elements\2.png" />
+    <Content Include="projetemasi\assets\img\elements\3.png" />
+    <Content Include="projetemasi\assets\img\elements\4.png" />
+    <Content Include="projetemasi\assets\img\elements\5.png" />
+    <Content Include="projetemasi\assets\img\elements\6.png" />
+    <Content Include="projetemasi\assets\img\elements\7.png" />
+    <Content Include="projetemasi\assets\img\elements\8.png" />
+    <Content Include="projetemasi\assets\img\elements\9.png" />
+    <Content Include="projetemasi\assets\img\favicon\favicon.ico" />
+    <Content Include="projetemasi\assets\img\icons\brands\asana.png" />
+    <Content Include="projetemasi\assets\img\icons\brands\behance.png" />
+    <Content Include="projetemasi\assets\img\icons\brands\dribbble.png" />
+    <Content Include="projetemasi\assets\img\icons\brands\facebook.png" />
+    <Content Include="projetemasi\assets\img\icons\brands\github.png" />
+    <Content Include="projetemasi\assets\img\icons\brands\google.png" />
+    <Content Include="projetemasi\assets\img\icons\brands\instagram.png" />
+    <Content Include="projetemasi\assets\img\icons\brands\mailchimp.png" />
+    <Content Include="projetemasi\assets\img\icons\brands\slack.png" />
+    <Content Include="projetemasi\assets\img\icons\brands\twitter.png" />
+    <Content Include="projetemasi\assets\img\icons\unicons\cc-primary.png" />
+    <Content Include="projetemasi\assets\img\icons\unicons\cc-warning.png" />
+    <Content Include="projetemasi\assets\img\icons\unicons\chart-success.png" />
+    <Content Include="projetemasi\assets\img\icons\unicons\chart.png" />
+    <Content Include="projetemasi\assets\img\icons\unicons\paypal.png" />
+    <Content Include="projetemasi\assets\img\icons\unicons\wallet-info.png" />
+    <Content Include="projetemasi\assets\img\icons\unicons\wallet.png" />
+    <Content Include="projetemasi\assets\img\illustrations\girl-doing-yoga-light.png" />
+    <Content Include="projetemasi\assets\img\illustrations\man-with-laptop.png" />
+    <Content Include="projetemasi\assets\img\illustrations\page-misc-error-light.png" />
+    <Content Include="projetemasi\assets\img\layouts\layout-container-light.png" />
+    <Content Include="projetemasi\assets\img\layouts\layout-fluid-light.png" />
+    <Content Include="projetemasi\assets\img\layouts\layout-without-menu-light.png" />
+    <Content Include="projetemasi\assets\img\layouts\layout-without-navbar-light.png" />
+    <Content Include="projetemasi\assets\js\config.js" />
+    <Content Include="projetemasi\assets\js\dashboards-analytics.js" />
+    <Content Include="projetemasi\assets\js\extended-ui-perfect-scrollbar.js" />
+    <Content Include="projetemasi\assets\js\form-basic-inputs.js" />
+    <Content Include="projetemasi\assets\js\main.js" />
+    <Content Include="projetemasi\assets\js\pages-account-settings-account.js" />
+    <Content Include="projetemasi\assets\js\ui-modals.js" />
+    <Content Include="projetemasi\assets\js\ui-popover.js" />
+    <Content Include="projetemasi\assets\js\ui-toasts.js" />
+    <Content Include="projetemasi\assets\vendor\css\core.css" />
+    <Content Include="projetemasi\assets\vendor\css\pages\page-auth.css" />
+    <Content Include="projetemasi\assets\vendor\css\pages\page-icons.css" />
+    <Content Include="projetemasi\assets\vendor\css\pages\page-misc.css" />
+    <Content Include="projetemasi\assets\vendor\fonts\iconify-icons.css" />
+    <Content Include="projetemasi\assets\vendor\js\bootstrap.js" />
+    <Content Include="projetemasi\assets\vendor\js\helpers.js" />
+    <Content Include="projetemasi\assets\vendor\js\menu.js" />
+    <Content Include="projetemasi\assets\vendor\libs\apex-charts\apex-charts.css" />
+    <Content Include="projetemasi\assets\vendor\libs\apex-charts\apexcharts.js" />
+    <Content Include="projetemasi\assets\vendor\libs\highlight\highlight-github.css" />
+    <Content Include="projetemasi\assets\vendor\libs\highlight\highlight.css" />
+    <Content Include="projetemasi\assets\vendor\libs\highlight\highlight.js" />
+    <Content Include="projetemasi\assets\vendor\libs\jquery\jquery.js" />
+    <Content Include="projetemasi\assets\vendor\libs\masonry\masonry.js" />
+    <Content Include="projetemasi\assets\vendor\libs\perfect-scrollbar\perfect-scrollbar.css" />
+    <Content Include="projetemasi\assets\vendor\libs\perfect-scrollbar\perfect-scrollbar.js" />
+    <Content Include="projetemasi\assets\vendor\libs\popper\popper.js" />
+    <Content Include="projetemasi\build-config.js" />
+    <Content Include="projetemasi\dist\css\core.css" />
+    <Content Include="projetemasi\dist\css\pages\page-auth.css" />
+    <Content Include="projetemasi\dist\css\pages\page-icons.css" />
+    <Content Include="projetemasi\dist\css\pages\page-misc.css" />
+    <Content Include="projetemasi\dist\fonts\iconify-icons.css" />
+    <Content Include="projetemasi\dist\js\bootstrap.js" />
+    <Content Include="projetemasi\dist\js\helpers.js" />
+    <Content Include="projetemasi\dist\js\menu.js" />
+    <Content Include="projetemasi\dist\libs\apex-charts\apex-charts.css" />
+    <Content Include="projetemasi\dist\libs\apex-charts\apexcharts.js" />
+    <Content Include="projetemasi\dist\libs\highlight\highlight-github.css" />
+    <Content Include="projetemasi\dist\libs\highlight\highlight.css" />
+    <Content Include="projetemasi\dist\libs\highlight\highlight.js" />
+    <Content Include="projetemasi\dist\libs\jquery\jquery.js" />
+    <Content Include="projetemasi\dist\libs\masonry\masonry.js" />
+    <Content Include="projetemasi\dist\libs\perfect-scrollbar\perfect-scrollbar.css" />
+    <Content Include="projetemasi\dist\libs\perfect-scrollbar\perfect-scrollbar.js" />
+    <Content Include="projetemasi\dist\libs\popper\popper.js" />
+    <Content Include="projetemasi\fonts\iconify\iconify.js" />
+    <Content Include="projetemasi\gulpfile.js" />
+    <Content Include="projetemasi\html\auth-forgot-password-basic.html" />
+    <Content Include="projetemasi\html\auth-login-basic.html" />
+    <Content Include="projetemasi\html\auth-register-basic.html" />
+    <Content Include="projetemasi\html\cards-basic.html" />
+    <Content Include="projetemasi\html\extended-ui-perfect-scrollbar.html" />
+    <Content Include="projetemasi\html\extended-ui-text-divider.html" />
+    <Content Include="projetemasi\html\form-layouts-horizontal.html" />
+    <Content Include="projetemasi\html\form-layouts-vertical.html" />
+    <Content Include="projetemasi\html\forms-basic-inputs.html" />
+    <Content Include="projetemasi\html\forms-input-groups.html" />
+    <Content Include="projetemasi\html\icons-boxicons.html" />
+    <Content Include="projetemasi\html\index.html" />
+    <Content Include="projetemasi\html\layouts-blank.html" />
+    <Content Include="projetemasi\html\layouts-container.html" />
+    <Content Include="projetemasi\html\layouts-fluid.html" />
+    <Content Include="projetemasi\html\layouts-without-menu.html" />
+    <Content Include="projetemasi\html\layouts-without-navbar.html" />
+    <Content Include="projetemasi\html\pages-account-settings-account.html" />
+    <Content Include="projetemasi\html\pages-account-settings-connections.html" />
+    <Content Include="projetemasi\html\pages-account-settings-notifications.html" />
+    <Content Include="projetemasi\html\pages-misc-error.html" />
+    <Content Include="projetemasi\html\pages-misc-under-maintenance.html" />
+    <Content Include="projetemasi\html\tables-basic.html" />
+    <Content Include="projetemasi\html\ui-accordion.html" />
+    <Content Include="projetemasi\html\ui-alerts.html" />
+    <Content Include="projetemasi\html\ui-badges.html" />
+    <Content Include="projetemasi\html\ui-buttons.html" />
+    <Content Include="projetemasi\html\ui-carousel.html" />
+    <Content Include="projetemasi\html\ui-collapse.html" />
+    <Content Include="projetemasi\html\ui-dropdowns.html" />
+    <Content Include="projetemasi\html\ui-footer.html" />
+    <Content Include="projetemasi\html\ui-list-groups.html" />
+    <Content Include="projetemasi\html\ui-modals.html" />
+    <Content Include="projetemasi\html\ui-navbar.html" />
+    <Content Include="projetemasi\html\ui-offcanvas.html" />
+    <Content Include="projetemasi\html\ui-pagination-breadcrumbs.html" />
+    <Content Include="projetemasi\html\ui-progress.html" />
+    <Content Include="projetemasi\html\ui-spinners.html" />
+    <Content Include="projetemasi\html\ui-tabs-pills.html" />
+    <Content Include="projetemasi\html\ui-toasts.html" />
+    <Content Include="projetemasi\html\ui-tooltips-popovers.html" />
+    <Content Include="projetemasi\html\ui-typography.html" />
+    <Content Include="projetemasi\index.html" />
+    <Content Include="projetemasi\js\bootstrap.js" />
+    <Content Include="projetemasi\js\helpers.js" />
+    <Content Include="projetemasi\js\menu.js" />
+    <Content Include="projetemasi\libs\apex-charts\apexcharts.js" />
+    <Content Include="projetemasi\libs\highlight\highlight.js" />
+    <Content Include="projetemasi\libs\jquery\jquery.js" />
+    <Content Include="projetemasi\libs\masonry\masonry.js" />
+    <Content Include="projetemasi\libs\perfect-scrollbar\perfect-scrollbar.js" />
+    <Content Include="projetemasi\libs\popper\popper.js" />
+    <Content Include="projetemasi\tasks\build.js" />
+    <Content Include="projetemasi\tasks\prod.js" />
+    <Content Include="projetemasi\webpack.config.js" />
+    <Content Include="Scripts\bootstrap.bundle.js" />
+    <Content Include="Scripts\bootstrap.bundle.min.js" />
+    <Content Include="Scripts\bootstrap.esm.js" />
+    <Content Include="Scripts\bootstrap.esm.min.js" />
+    <Content Include="Scripts\bootstrap.js" />
+    <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="projetemasi\.browserslistrc" />
+    <Content Include="projetemasi\.editorconfig" />
+    <Content Include="projetemasi\.eslintignore" />
+    <Content Include="projetemasi\.eslintrc.json" />
+    <Content Include="projetemasi\.gitattributes" />
+    <Content Include="projetemasi\.gitignore" />
+    <Content Include="projetemasi\.npmrc" />
+    <Content Include="projetemasi\.prettierignore" />
+    <Content Include="projetemasi\.prettierrc.json" />
+    <Content Include="projetemasi\libs\apex-charts\apex-charts.scss" />
+    <Content Include="projetemasi\libs\highlight\highlight-github.scss" />
+    <Content Include="projetemasi\libs\highlight\highlight.scss" />
+    <Content Include="projetemasi\libs\perfect-scrollbar\perfect-scrollbar.scss" />
+    <Content Include="projetemasi\package.json" />
+    <Content Include="projetemasi\scss\core.scss" />
+    <Content Include="projetemasi\scss\pages\page-auth.scss" />
+    <Content Include="projetemasi\scss\pages\page-icons.scss" />
+    <Content Include="projetemasi\scss\pages\page-misc.scss" />
+    <Content Include="projetemasi\scss\_bootstrap-extended.scss" />
+    <Content Include="projetemasi\scss\_bootstrap-extended\forms\_floating-labels.scss" />
+    <Content Include="projetemasi\scss\_bootstrap-extended\forms\_form-check.scss" />
+    <Content Include="projetemasi\scss\_bootstrap-extended\forms\_form-control.scss" />
+    <Content Include="projetemasi\scss\_bootstrap-extended\forms\_form-range.scss" />
+    <Content Include="projetemasi\scss\_bootstrap-extended\forms\_form-select.scss" />
+    <Content Include="projetemasi\scss\_bootstrap-extended\forms\_input-group.scss" />
+    <Content Include="projetemasi\scss\_bootstrap-extended\forms\_labels.scss" />
+    <Content Include="projetemasi\scss\_bootstrap-extended\helpers\_color-bg.scss" />
+    <Content Include="projetemasi\scss\_bootstrap-extended\mixins\_border-radius.scss" />
+    <Content Include="projetemasi\scss\_bootstrap-extended\mixins\_caret.scss" />
+    <Content Include="projetemasi\scss\_bootstrap-extended\mixins\_misc.scss" />
+    <Content Include="projetemasi\scss\_bootstrap-extended\_accordion.scss" />
+    <Content Include="projetemasi\scss\_bootstrap-extended\_alert.scss" />
+    <Content Include="projetemasi\scss\_bootstrap-extended\_badge.scss" />
+    <Content Include="projetemasi\scss\_bootstrap-extended\_breadcrumb.scss" />
+    <Content Include="projetemasi\scss\_bootstrap-extended\_button-group.scss" />
+    <Content Include="projetemasi\scss\_bootstrap-extended\_buttons.scss" />
+    <Content Include="projetemasi\scss\_bootstrap-extended\_card.scss" />
+    <Content Include="projetemasi\scss\_bootstrap-extended\_carousel.scss" />
+    <Content Include="projetemasi\scss\_bootstrap-extended\_dropdown.scss" />
+    <Content Include="projetemasi\scss\_bootstrap-extended\_forms.scss" />
+    <Content Include="projetemasi\scss\_bootstrap-extended\_functions.scss" />
+    <Content Include="projetemasi\scss\_bootstrap-extended\_helpers.scss" />
+    <Content Include="projetemasi\scss\_bootstrap-extended\_include.scss" />
+    <Content Include="projetemasi\scss\_bootstrap-extended\_list-group.scss" />
+    <Content Include="projetemasi\scss\_bootstrap-extended\_mixins.scss" />
+    <Content Include="projetemasi\scss\_bootstrap-extended\_modal.scss" />
+    <Content Include="projetemasi\scss\_bootstrap-extended\_nav.scss" />
+    <Content Include="projetemasi\scss\_bootstrap-extended\_navbar.scss" />
+    <Content Include="projetemasi\scss\_bootstrap-extended\_offcanvas.scss" />
+    <Content Include="projetemasi\scss\_bootstrap-extended\_pagination.scss" />
+    <Content Include="projetemasi\scss\_bootstrap-extended\_popover.scss" />
+    <Content Include="projetemasi\scss\_bootstrap-extended\_progress.scss" />
+    <Content Include="projetemasi\scss\_bootstrap-extended\_reboot.scss" />
+    <Content Include="projetemasi\scss\_bootstrap-extended\_root.scss" />
+    <Content Include="projetemasi\scss\_bootstrap-extended\_spinners.scss" />
+    <Content Include="projetemasi\scss\_bootstrap-extended\_tables.scss" />
+    <Content Include="projetemasi\scss\_bootstrap-extended\_toasts.scss" />
+    <Content Include="projetemasi\scss\_bootstrap-extended\_tooltip.scss" />
+    <Content Include="projetemasi\scss\_bootstrap-extended\_type.scss" />
+    <Content Include="projetemasi\scss\_bootstrap-extended\_utilities.scss" />
+    <Content Include="projetemasi\scss\_bootstrap-extended\_variables.scss" />
+    <Content Include="projetemasi\scss\_bootstrap.scss" />
+    <Content Include="projetemasi\scss\_colors.scss" />
+    <Content Include="projetemasi\scss\_components.scss" />
+    <Content Include="projetemasi\scss\_components\_app-brand.scss" />
+    <Content Include="projetemasi\scss\_components\_avatar.scss" />
+    <Content Include="projetemasi\scss\_components\_base.scss" />
+    <Content Include="projetemasi\scss\_components\_common.scss" />
+    <Content Include="projetemasi\scss\_components\_footer.scss" />
+    <Content Include="projetemasi\scss\_components\_include.scss" />
+    <Content Include="projetemasi\scss\_components\_layout.scss" />
+    <Content Include="projetemasi\scss\_components\_menu.scss" />
+    <Content Include="projetemasi\scss\_components\_root.scss" />
+    <Content Include="projetemasi\scss\_components\_text-divider.scss" />
+    <Content Include="projetemasi\scss\_components\_variables.scss" />
+    <Content Include="projetemasi\scss\_custom-styles.scss" />
+    <Content Include="projetemasi\scss\_custom-variables\_bootstrap-extended.scss" />
+    <Content Include="projetemasi\scss\_custom-variables\_components.scss" />
+    <Content Include="projetemasi\yarn.lock" />
+    <None Include="Scripts\jquery-3.7.0.intellisense.js" />
+    <Content Include="Scripts\jquery-3.7.0.js" />
+    <Content Include="Scripts\jquery-3.7.0.min.js" />
+    <Content Include="Scripts\jquery-3.7.0.slim.js" />
+    <Content Include="Scripts\jquery-3.7.0.slim.min.js" />
+    <None Include="Scripts\jquery.validate-vsdoc.js" />
+    <Content Include="Scripts\jquery.validate.js" />
+    <Content Include="Scripts\jquery.validate.min.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="Scripts\modernizr-2.8.3.js" />
+    <Content Include="Web.config" />
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Views\Web.config" />
+    <Content Include="Views\_ViewStart.cshtml" />
+    <Content Include="Views\Shared\Error.cshtml" />
+    <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="Views\Home\About.cshtml" />
+    <Content Include="Views\Home\Contact.cshtml" />
+    <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\PersonelBilgileris\Create.cshtml" />
+    <Content Include="Views\PersonelBilgileris\Delete.cshtml" />
+    <Content Include="Views\PersonelBilgileris\Details.cshtml" />
+    <Content Include="Views\PersonelBilgileris\Edit.cshtml" />
+    <Content Include="Views\PersonelBilgileris\Index.cshtml" />
+    <Content Include="Views\PersonelBilgileris\PersonelKarti.cshtml" />
+    <Content Include="Views\PersonelProjeleris\Index.cshtml" />
+    <Content Include="Views\PersonelProjeleris\Create.cshtml" />
+    <Content Include="Views\PersonelProjeleris\Edit.cshtml" />
+    <Content Include="Views\GenelBakis\Index.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\bootstrap.rtl.min.css.map" />
+    <Content Include="Content\bootstrap.rtl.css.map" />
+    <Content Include="Content\bootstrap.min.css.map" />
+    <Content Include="Content\bootstrap.css.map" />
+    <Content Include="Content\bootstrap-utilities.rtl.min.css.map" />
+    <Content Include="Content\bootstrap-utilities.rtl.css.map" />
+    <Content Include="Content\bootstrap-utilities.min.css.map" />
+    <Content Include="Content\bootstrap-utilities.css.map" />
+    <Content Include="Content\bootstrap-reboot.rtl.min.css.map" />
+    <Content Include="Content\bootstrap-reboot.rtl.css.map" />
+    <Content Include="Content\bootstrap-reboot.min.css.map" />
+    <Content Include="Content\bootstrap-reboot.css.map" />
+    <Content Include="Content\bootstrap-grid.rtl.min.css.map" />
+    <Content Include="Content\bootstrap-grid.rtl.css.map" />
+    <Content Include="Content\bootstrap-grid.min.css.map" />
+    <Content Include="Content\bootstrap-grid.css.map" />
+    <None Include="packages.config" />
+    <Content Include="Scripts\bootstrap.min.js.map" />
+    <Content Include="Scripts\bootstrap.js.map" />
+    <Content Include="Scripts\bootstrap.esm.min.js.map" />
+    <Content Include="Scripts\bootstrap.esm.js.map" />
+    <Content Include="Scripts\bootstrap.bundle.min.js.map" />
+    <Content Include="Scripts\bootstrap.bundle.js.map" />
+    <Content Include="Scripts\jquery-3.7.0.slim.min.map" />
+    <Content Include="Scripts\jquery-3.7.0.min.map" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <Target Name="MvcBuildViews" AfterTargets="AfterBuild" Condition="'$(MvcBuildViews)'=='true'">
+    <AspNetCompiler VirtualPath="temp" PhysicalPath="$(WebProjectOutputDir)" />
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>65252</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>https://localhost:44366/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>Bu proje bu bilgisayarda olmayan NuGet paketlerine başvuru yapıyor. Bunları indirmek için NuGet Paket Geri Yükleme'yi kullanın. Daha fazla bilgi için, bkz. http://go.microsoft.com/fwlink/?LinkID=322105. Eksik dosya: {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+    <Error Condition="!Exists('..\packages\EntityFramework.6.5.1\build\EntityFramework.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\EntityFramework.6.5.1\build\EntityFramework.props'))" />
+    <Error Condition="!Exists('..\packages\EntityFramework.6.5.1\build\EntityFramework.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\EntityFramework.6.5.1\build\EntityFramework.targets'))" />
+  </Target>
+  <Import Project="..\packages\EntityFramework.6.5.1\build\EntityFramework.targets" Condition="Exists('..\packages\EntityFramework.6.5.1\build\EntityFramework.targets')" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target> -->
+</Project>

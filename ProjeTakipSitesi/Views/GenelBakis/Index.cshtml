@@ -1,0 +1,1140 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+        <div class="row">
+            <div class="col-xxl-8 mb-6 order-0">
+                <div class="card">
+                    <div class="d-flex align-items-start row">
+                        <div class="col-sm-7">
+                            <div class="card-body">
+                                <h5 class="card-title text-primary mb-3">Proje Atama Sitesine Hoşgeldiniz 🎉</h5>
+                                <p class="mb-6">
+                                    Toplam <span class="fw-bold">72</span> proje mevcuttur. Hepsini detaylı olarak inceleyebilirsiniz.
+                                </p>
+
+                                <a href="javascript:;" class="btn btn-sm btn-outline-primary">Detaylı Olarak Gör</a>
+                            </div>
+                        </div>
+                        <div class="col-sm-5 text-center text-sm-left">
+                            <div class="card-body pb-0 px-0 px-md-6">
+                                <img src="~/projetemasi/assets/img/illustrations/man-with-laptop.png" height="175" alt="View Badge User">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xxl-4 col-lg-12 col-md-4 order-1">
+                <div class="row">
+                    <div class="col-lg-6 col-md-12 col-6 mb-6">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <div class="card-title d-flex align-items-start justify-content-between mb-4">
+                                    <div class="avatar flex-shrink-0">
+                                        <img src="~/projetemasi/assets/img/icons/unicons/chart-success.png" alt="chart success" class="rounded">
+                                    </div>
+                                </div>
+                                <p class="mb-1">Tamamlanan Projeler</p>
+                                <small class="text-success fw-medium"><i class="icon-base bx bx-up-arrow-alt"></i> +72.80% Tamamlandı</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-12 col-6 mb-6">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <div class="card-title d-flex align-items-start justify-content-between mb-4">
+                                    <div class="avatar flex-shrink-0">
+                                        <img src="~/projetemasi/assets/img/icons/unicons/wallet-info.png" alt="wallet info" class="rounded">
+                                    </div>
+                                </div>
+                                <p class="mb-1">Yüksek Öncelikli </p>
+                                <small class="text-success fw-medium"><i class="icon-base bx bx-up-arrow-alt"></i> +28.42% Proje</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-12 col-xxl-8 order-2 order-md-3 order-xxl-2 mb-6 total-revenue">
+                <div class="card">
+                    <div class="row row-bordered g-0">
+                        <div class="col-lg-8">
+                            <div class="card-header d-flex align-items-center justify-content-between">
+                                <div class="card-title mb-0">
+                                    <h5 class="m-0 me-2">Total Revenue</h5>
+                                </div>
+                                <div class="dropdown">
+                                    <button class="btn p-0" type="button" id="totalRevenue" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <i class="icon-base bx bx-dots-vertical-rounded icon-lg text-body-secondary"></i>
+                                    </button>
+                                    <div class="dropdown-menu dropdown-menu-end" aria-labelledby="totalRevenue">
+                                        <a class="dropdown-item" href="javascript:void(0);">Select All</a>
+                                        <a class="dropdown-item" href="javascript:void(0);">Refresh</a>
+                                        <a class="dropdown-item" href="javascript:void(0);">Share</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="totalRevenueChart" class="px-3" style="min-height: 315px;">
+                                <div id="apexcharts150t4qxx" class="apexcharts-canvas apexcharts150t4qxx apexcharts-theme-" style="width: 910px; height: 300px;">
+                                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" class="apexcharts-svg" xmlns:data="ApexChartsNS" transform="translate(0, 0)" width="910" height="300">
+                                        <foreignObject x="0" y="0" width="910" height="300">
+                                            <div class="apexcharts-legend apexcharts-align-left apx-legend-position-top" xmlns="http://www.w3.org/1999/xhtml" style="right: 0px; position: absolute; left: 0px; top: 4px; max-height: 150px;">
+                                                <div class="apexcharts-legend-series" rel="1" seriesname="2024" data:collapsed="false" style="margin: 4px 10px;">
+                                                    <span class="apexcharts-legend-marker" rel="1" data:collapsed="false" style="height: 8px; width: 8px; left: 0px; top: 0px;">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="100%">
+                                                            <path d="M 0, 0
+           m -4, 0
+           a 4,4 0 1,0 8,0
+           a 4,4 0 1,0 -8,0" fill="var(--bs-primary)" fill-opacity="1" stroke="#ffffff" stroke-opacity="0.9" stroke-linecap="round" stroke-width="0" stroke-dasharray="0" cx="0" cy="0" shape="circle" class="apexcharts-legend-marker apexcharts-marker apexcharts-marker-circle" style="transform: translate(50%, 50%);"></path>
+                                                        </svg>
+                                                    </span><span class="apexcharts-legend-text" rel="1" i="0" data:default-text="2024" data:collapsed="false" style="color: var(--bs-body-color); font-size: 13px; font-weight: 400; font-family: var(--bs-font-family-base);">2024</span>
+                                                </div><div class="apexcharts-legend-series" rel="2" seriesname="2023" data:collapsed="false" style="margin: 4px 10px;">
+                                                    <span class="apexcharts-legend-marker" rel="2" data:collapsed="false" style="height: 8px; width: 8px; left: 0px; top: 0px;">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="100%">
+                                                            <path d="M 0, 0
+           m -4, 0
+           a 4,4 0 1,0 8,0
+           a 4,4 0 1,0 -8,0" fill="var(--bs-info)" fill-opacity="1" stroke="#ffffff" stroke-opacity="0.9" stroke-linecap="round" stroke-width="0" stroke-dasharray="0" cx="0" cy="0" shape="circle" class="apexcharts-legend-marker apexcharts-marker apexcharts-marker-circle" style="transform: translate(50%, 50%);"></path>
+                                                        </svg>
+                                                    </span><span class="apexcharts-legend-text" rel="2" i="1" data:default-text="2023" data:collapsed="false" style="color: var(--bs-body-color); font-size: 13px; font-weight: 400; font-family: var(--bs-font-family-base);">2023</span>
+                                                </div>
+                                            </div><style type="text/css">
+                                                      .apexcharts-flip-y {
+                                                          transform: scaleY(-1) translateY(-100%);
+                                                          transform-origin: top;
+                                                          transform-box: fill-box;
+                                                      }
+
+                                                      .apexcharts-flip-x {
+                                                          transform: scaleX(-1);
+                                                          transform-origin: center;
+                                                          transform-box: fill-box;
+                                                      }
+
+                                                      .apexcharts-legend {
+                                                          display: flex;
+                                                          overflow: auto;
+                                                          padding: 0 10px;
+                                                      }
+
+                                                          .apexcharts-legend.apexcharts-legend-group-horizontal {
+                                                              flex-direction: column;
+                                                          }
+
+                                                      .apexcharts-legend-group {
+                                                          display: flex;
+                                                      }
+
+                                                      .apexcharts-legend-group-vertical {
+                                                          flex-direction: column-reverse;
+                                                      }
+
+                                                      .apexcharts-legend.apx-legend-position-bottom, .apexcharts-legend.apx-legend-position-top {
+                                                          flex-wrap: wrap
+                                                      }
+
+                                                      .apexcharts-legend.apx-legend-position-right, .apexcharts-legend.apx-legend-position-left {
+                                                          flex-direction: column;
+                                                          bottom: 0;
+                                                      }
+
+                                                      .apexcharts-legend.apx-legend-position-bottom.apexcharts-align-left, .apexcharts-legend.apx-legend-position-top.apexcharts-align-left, .apexcharts-legend.apx-legend-position-right, .apexcharts-legend.apx-legend-position-left {
+                                                          justify-content: flex-start;
+                                                          align-items: flex-start;
+                                                      }
+
+                                                      .apexcharts-legend.apx-legend-position-bottom.apexcharts-align-center, .apexcharts-legend.apx-legend-position-top.apexcharts-align-center {
+                                                          justify-content: center;
+                                                          align-items: center;
+                                                      }
+
+                                                      .apexcharts-legend.apx-legend-position-bottom.apexcharts-align-right, .apexcharts-legend.apx-legend-position-top.apexcharts-align-right {
+                                                          justify-content: flex-end;
+                                                          align-items: flex-end;
+                                                      }
+
+                                                      .apexcharts-legend-series {
+                                                          cursor: pointer;
+                                                          line-height: normal;
+                                                          display: flex;
+                                                          align-items: center;
+                                                      }
+
+                                                      .apexcharts-legend-text {
+                                                          position: relative;
+                                                          font-size: 14px;
+                                                      }
+
+                                                          .apexcharts-legend-text *, .apexcharts-legend-marker * {
+                                                              pointer-events: none;
+                                                          }
+
+                                                      .apexcharts-legend-marker {
+                                                          position: relative;
+                                                          display: flex;
+                                                          align-items: center;
+                                                          justify-content: center;
+                                                          cursor: pointer;
+                                                          margin-right: 1px;
+                                                      }
+
+                                                      .apexcharts-legend-series.apexcharts-no-click {
+                                                          cursor: auto;
+                                                      }
+
+                                                      .apexcharts-legend .apexcharts-hidden-zero-series, .apexcharts-legend .apexcharts-hidden-null-series {
+                                                          display: none !important;
+                                                      }
+
+                                                      .apexcharts-inactive-legend {
+                                                          opacity: 0.45;
+                                                      }
+                                            </style>
+                                        </foreignObject>
+                                        <g class="apexcharts-datalabels-group" transform="translate(0, 0) scale(1)"></g>
+                                        <g class="apexcharts-datalabels-group" transform="translate(0, 0) scale(1)"></g>
+                                        <g class="apexcharts-yaxis" rel="0" transform="translate(14.215356826782227, 0)"><g class="apexcharts-yaxis-texts-g"><text x="20" y="57.333333333333336" text-anchor="end" dominant-baseline="auto" font-size="13px" font-family="var(--bs-font-family-base)" font-weight="400" fill="var(--bs-secondary-color)" class="apexcharts-text apexcharts-yaxis-label " style="font-family: var(--bs-font-family-base);"><tspan>30</tspan><title>30</title></text><text x="20" y="100.67349314816792" text-anchor="end" dominant-baseline="auto" font-size="13px" font-family="var(--bs-font-family-base)" font-weight="400" fill="var(--bs-secondary-color)" class="apexcharts-text apexcharts-yaxis-label " style="font-family: var(--bs-font-family-base);"><tspan>20</tspan><title>20</title></text><text x="20" y="144.01365296300253" text-anchor="end" dominant-baseline="auto" font-size="13px" font-family="var(--bs-font-family-base)" font-weight="400" fill="var(--bs-secondary-color)" class="apexcharts-text apexcharts-yaxis-label " style="font-family: var(--bs-font-family-base);"><tspan>10</tspan><title>10</title></text><text x="20" y="187.3538127778371" text-anchor="end" dominant-baseline="auto" font-size="13px" font-family="var(--bs-font-family-base)" font-weight="400" fill="var(--bs-secondary-color)" class="apexcharts-text apexcharts-yaxis-label " style="font-family: var(--bs-font-family-base);"><tspan>0</tspan><title>0</title></text><text x="20" y="230.69397259267168" text-anchor="end" dominant-baseline="auto" font-size="13px" font-family="var(--bs-font-family-base)" font-weight="400" fill="var(--bs-secondary-color)" class="apexcharts-text apexcharts-yaxis-label " style="font-family: var(--bs-font-family-base);"><tspan>-10</tspan><title>-10</title></text><text x="20" y="274.03413240750626" text-anchor="end" dominant-baseline="auto" font-size="13px" font-family="var(--bs-font-family-base)" font-weight="400" fill="var(--bs-secondary-color)" class="apexcharts-text apexcharts-yaxis-label " style="font-family: var(--bs-font-family-base);"><tspan>-20</tspan><title>-20</title></text></g></g>
+                                        <g class="apexcharts-inner apexcharts-graphical" transform="translate(52.21535682678223, 53)"><defs><linearGradient x1="0" y1="0" x2="0" y2="1" id="SvgjsLinearGradient1022"><stop stop-opacity="0.4" stop-color="rgba(216,227,240,0.4)" offset="0"></stop><stop stop-opacity="0.5" stop-color="rgba(190,209,230,0.5)" offset="1"></stop><stop stop-opacity="0.5" stop-color="rgba(190,209,230,0.5)" offset="1"></stop></linearGradient><clipPath id="gridRectMask150t4qxx"><rect width="837.7846431732178" height="216.70079907417298" x="0" y="0" rx="0" ry="0" opacity="1" stroke-width="0" stroke="none" stroke-dasharray="0" fill="#fff"></rect></clipPath><clipPath id="gridRectBarMask150t4qxx"><rect width="847.7846431732178" height="226.70079907417298" x="-5" y="-5" rx="0" ry="0" opacity="1" stroke-width="0" stroke="none" stroke-dasharray="0" fill="#fff"></rect></clipPath><clipPath id="gridRectMarkerMask150t4qxx"><rect width="837.7846431732178" height="216.70079907417298" x="0" y="0" rx="0" ry="0" opacity="1" stroke-width="0" stroke="none" stroke-dasharray="0" fill="#fff"></rect></clipPath><clipPath id="forecastMask150t4qxx"></clipPath><clipPath id="nonForecastMask150t4qxx"></clipPath></defs><rect width="39.49556174959456" height="216.70079907417298" x="0" y="0" rx="0" ry="0" opacity="1" stroke-width="0" stroke="#b6b6b6" stroke-dasharray="3" fill="url(#SvgjsLinearGradient1022)" class="apexcharts-xcrosshairs" y2="216.70079907417298" filter="none" fill-opacity="0.9"></rect><g class="apexcharts-grid"><g class="apexcharts-gridlines-horizontal"><line x1="0" y1="43.34015981483459" x2="837.7846431732178" y2="43.34015981483459" stroke="var(--bs-border-color)" stroke-dasharray="7" stroke-linecap="butt" class="apexcharts-gridline"></line><line x1="0" y1="86.68031962966919" x2="837.7846431732178" y2="86.68031962966919" stroke="var(--bs-border-color)" stroke-dasharray="7" stroke-linecap="butt" class="apexcharts-gridline"></line><line x1="0" y1="130.0204794445038" x2="837.7846431732178" y2="130.0204794445038" stroke="var(--bs-border-color)" stroke-dasharray="7" stroke-linecap="butt" class="apexcharts-gridline"></line><line x1="0" y1="173.36063925933837" x2="837.7846431732178" y2="173.36063925933837" stroke="var(--bs-border-color)" stroke-dasharray="7" stroke-linecap="butt" class="apexcharts-gridline"></line><line x1="0" y1="216.70079907417295" x2="837.7846431732178" y2="216.70079907417295" stroke="var(--bs-border-color)" stroke-dasharray="7" stroke-linecap="butt" class="apexcharts-gridline"></line></g><g class="apexcharts-gridlines-vertical"></g><line x1="0" y1="216.70079907417298" x2="837.7846431732178" y2="216.70079907417298" stroke="transparent" stroke-dasharray="0" stroke-linecap="butt"></line><line x1="0" y1="1" x2="0" y2="216.70079907417298" stroke="transparent" stroke-dasharray="0" stroke-linecap="butt"></line></g><g class="apexcharts-grid-borders"><line x1="0" y1="0" x2="837.7846431732178" y2="0" stroke="var(--bs-border-color)" stroke-dasharray="7" stroke-linecap="butt" class="apexcharts-gridline"></line></g><g class="apexcharts-bar-series apexcharts-plot-series"><g class="apexcharts-series" seriesName="2024" rel="1" data:realIndex="0"><path d="M 43.09397935186114 115.0214794445038 L 43.09397935186114 67.0091917778015 C 43.09397935186114 61.009191777801504 49.09397935186114 55.00919177780151 55.09397935186114 55.00919177780151 L 64.5895411014557 55.00919177780151 C 70.5895411014557 55.00919177780151 76.5895411014557 61.009191777801504 76.5895411014557 67.0091917778015 L 76.5895411014557 115.0214794445038 C 76.5895411014557 121.0214794445038 70.5895411014557 127.0214794445038 64.5895411014557 127.0214794445038 L 55.09397935186114 127.0214794445038 C 49.09397935186114 127.0214794445038 43.09397935186114 121.0214794445038 43.09397935186114 115.0214794445038 Z " fill="var(--bs-primary)" fill-opacity="1" stroke="var(--bs-paper-bg)" stroke-opacity="1" stroke-linecap="round" stroke-width="6" stroke-dasharray="0" class="apexcharts-bar-area " index="0" clip-path="url(#gridRectBarMask150t4qxx)" pathTo="M 43.09397935186114 115.0214794445038 L 43.09397935186114 67.0091917778015 C 43.09397935186114 61.009191777801504 49.09397935186114 55.00919177780151 55.09397935186114 55.00919177780151 L 64.5895411014557 55.00919177780151 C 70.5895411014557 55.00919177780151 76.5895411014557 61.009191777801504 76.5895411014557 67.0091917778015 L 76.5895411014557 115.0214794445038 C 76.5895411014557 121.0214794445038 70.5895411014557 127.0214794445038 64.5895411014557 127.0214794445038 L 55.09397935186114 127.0214794445038 C 49.09397935186114 127.0214794445038 43.09397935186114 121.0214794445038 43.09397935186114 115.0214794445038 Z " pathFrom="M 43.09397935186114 127.0214794445038 L 43.09397935186114 127.0214794445038 L 76.5895411014557 127.0214794445038 L 76.5895411014557 127.0214794445038 L 76.5895411014557 127.0214794445038 L 76.5895411014557 127.0214794445038 L 76.5895411014557 127.0214794445038 L 43.09397935186114 127.0214794445038 Z" cy="52.008191777801514" cx="156.77749980517797" j="0" val="18" barHeight="78.01228766670228" barWidth="39.49556174959456"></path><path d="M 162.77749980517797 115.0214794445038 L 162.77749980517797 114.68336757411959 C 162.77749980517797 108.68336757411959 168.77749980517797 102.68336757411959 174.77749980517797 102.68336757411959 L 184.27306155477254 102.68336757411959 C 190.27306155477254 102.68336757411959 196.27306155477254 108.68336757411959 196.27306155477254 114.68336757411959 L 196.27306155477254 115.0214794445038 C 196.27306155477254 121.0214794445038 190.27306155477254 127.0214794445038 184.27306155477254 127.0214794445038 L 174.77749980517797 127.0214794445038 C 168.77749980517797 127.0214794445038 162.77749980517797 121.0214794445038 162.77749980517797 115.0214794445038 Z " fill="var(--bs-primary)" fill-opacity="1" stroke="var(--bs-paper-bg)" stroke-opacity="1" stroke-linecap="round" stroke-width="6" stroke-dasharray="0" class="apexcharts-bar-area " index="0" clip-path="url(#gridRectBarMask150t4qxx)" pathTo="M 162.77749980517797 115.0214794445038 L 162.77749980517797 114.68336757411959 C 162.77749980517797 108.68336757411959 168.77749980517797 102.68336757411959 174.77749980517797 102.68336757411959 L 184.27306155477254 102.68336757411959 C 190.27306155477254 102.68336757411959 196.27306155477254 108.68336757411959 196.27306155477254 114.68336757411959 L 196.27306155477254 115.0214794445038 C 196.27306155477254 121.0214794445038 190.27306155477254 127.0214794445038 184.27306155477254 127.0214794445038 L 174.77749980517797 127.0214794445038 C 168.77749980517797 127.0214794445038 162.77749980517797 121.0214794445038 162.77749980517797 115.0214794445038 Z " pathFrom="M 162.77749980517797 127.0214794445038 L 162.77749980517797 127.0214794445038 L 196.27306155477254 127.0214794445038 L 196.27306155477254 127.0214794445038 L 196.27306155477254 127.0214794445038 L 196.27306155477254 127.0214794445038 L 196.27306155477254 127.0214794445038 L 162.77749980517797 127.0214794445038 Z" cy="99.68236757411958" cx="276.4610202584948" j="1" val="7" barHeight="30.338111870384218" barWidth="39.49556174959456"></path><path d="M 282.4610202584948 115.0214794445038 L 282.4610202584948 80.0112397222519 C 282.4610202584948 74.0112397222519 288.4610202584948 68.0112397222519 294.4610202584948 68.0112397222519 L 303.95658200808936 68.0112397222519 C 309.95658200808936 68.0112397222519 315.95658200808936 74.0112397222519 315.95658200808936 80.0112397222519 L 315.95658200808936 115.0214794445038 C 315.95658200808936 121.0214794445038 309.95658200808936 127.0214794445038 303.95658200808936 127.0214794445038 L 294.4610202584948 127.0214794445038 C 288.4610202584948 127.0214794445038 282.4610202584948 121.0214794445038 282.4610202584948 115.0214794445038 Z " fill="var(--bs-primary)" fill-opacity="1" stroke="var(--bs-paper-bg)" stroke-opacity="1" stroke-linecap="round" stroke-width="6" stroke-dasharray="0" class="apexcharts-bar-area " index="0" clip-path="url(#gridRectBarMask150t4qxx)" pathTo="M 282.4610202584948 115.0214794445038 L 282.4610202584948 80.0112397222519 C 282.4610202584948 74.0112397222519 288.4610202584948 68.0112397222519 294.4610202584948 68.0112397222519 L 303.95658200808936 68.0112397222519 C 309.95658200808936 68.0112397222519 315.95658200808936 74.0112397222519 315.95658200808936 80.0112397222519 L 315.95658200808936 115.0214794445038 C 315.95658200808936 121.0214794445038 309.95658200808936 127.0214794445038 303.95658200808936 127.0214794445038 L 294.4610202584948 127.0214794445038 C 288.4610202584948 127.0214794445038 282.4610202584948 121.0214794445038 282.4610202584948 115.0214794445038 Z " pathFrom="M 282.4610202584948 127.0214794445038 L 282.4610202584948 127.0214794445038 L 315.95658200808936 127.0214794445038 L 315.95658200808936 127.0214794445038 L 315.95658200808936 127.0214794445038 L 315.95658200808936 127.0214794445038 L 315.95658200808936 127.0214794445038 L 282.4610202584948 127.0214794445038 Z" cy="65.0102397222519" cx="396.1445407118116" j="2" val="15" barHeight="65.0102397222519" barWidth="39.49556174959456"></path><path d="M 402.1445407118116 115.0214794445038 L 402.1445407118116 19.33501598148346 C 402.1445407118116 13.335015981483458 408.1445407118116 7.33501598148346 414.1445407118116 7.33501598148346 L 423.6401024614062 7.33501598148346 C 429.6401024614062 7.33501598148346 435.6401024614062 13.335015981483458 435.6401024614062 19.33501598148346 L 435.6401024614062 115.0214794445038 C 435.6401024614062 121.0214794445038 429.6401024614062 127.0214794445038 423.6401024614062 127.0214794445038 L 414.1445407118116 127.0214794445038 C 408.1445407118116 127.0214794445038 402.1445407118116 121.0214794445038 402.1445407118116 115.0214794445038 Z " fill="var(--bs-primary)" fill-opacity="1" stroke="var(--bs-paper-bg)" stroke-opacity="1" stroke-linecap="round" stroke-width="6" stroke-dasharray="0" class="apexcharts-bar-area " index="0" clip-path="url(#gridRectBarMask150t4qxx)" pathTo="M 402.1445407118116 115.0214794445038 L 402.1445407118116 19.33501598148346 C 402.1445407118116 13.335015981483458 408.1445407118116 7.33501598148346 414.1445407118116 7.33501598148346 L 423.6401024614062 7.33501598148346 C 429.6401024614062 7.33501598148346 435.6401024614062 13.335015981483458 435.6401024614062 19.33501598148346 L 435.6401024614062 115.0214794445038 C 435.6401024614062 121.0214794445038 429.6401024614062 127.0214794445038 423.6401024614062 127.0214794445038 L 414.1445407118116 127.0214794445038 C 408.1445407118116 127.0214794445038 402.1445407118116 121.0214794445038 402.1445407118116 115.0214794445038 Z " pathFrom="M 402.1445407118116 127.0214794445038 L 402.1445407118116 127.0214794445038 L 435.6401024614062 127.0214794445038 L 435.6401024614062 127.0214794445038 L 435.6401024614062 127.0214794445038 L 435.6401024614062 127.0214794445038 L 435.6401024614062 127.0214794445038 L 402.1445407118116 127.0214794445038 Z" cy="4.334015981483461" cx="515.8280611651285" j="3" val="29" barHeight="125.68646346302033" barWidth="39.49556174959456"></path><path d="M 521.8280611651285 115.0214794445038 L 521.8280611651285 67.0091917778015 C 521.8280611651285 61.009191777801504 527.8280611651285 55.00919177780151 533.8280611651285 55.00919177780151 L 543.323622914723 55.00919177780151 C 549.323622914723 55.00919177780151 555.323622914723 61.009191777801504 555.323622914723 67.0091917778015 L 555.323622914723 115.0214794445038 C 555.323622914723 121.0214794445038 549.323622914723 127.0214794445038 543.323622914723 127.0214794445038 L 533.8280611651285 127.0214794445038 C 527.8280611651285 127.0214794445038 521.8280611651285 121.0214794445038 521.8280611651285 115.0214794445038 Z " fill="var(--bs-primary)" fill-opacity="1" stroke="var(--bs-paper-bg)" stroke-opacity="1" stroke-linecap="round" stroke-width="6" stroke-dasharray="0" class="apexcharts-bar-area " index="0" clip-path="url(#gridRectBarMask150t4qxx)" pathTo="M 521.8280611651285 115.0214794445038 L 521.8280611651285 67.0091917778015 C 521.8280611651285 61.009191777801504 527.8280611651285 55.00919177780151 533.8280611651285 55.00919177780151 L 543.323622914723 55.00919177780151 C 549.323622914723 55.00919177780151 555.323622914723 61.009191777801504 555.323622914723 67.0091917778015 L 555.323622914723 115.0214794445038 C 555.323622914723 121.0214794445038 549.323622914723 127.0214794445038 543.323622914723 127.0214794445038 L 533.8280611651285 127.0214794445038 C 527.8280611651285 127.0214794445038 521.8280611651285 121.0214794445038 521.8280611651285 115.0214794445038 Z " pathFrom="M 521.8280611651285 127.0214794445038 L 521.8280611651285 127.0214794445038 L 555.323622914723 127.0214794445038 L 555.323622914723 127.0214794445038 L 555.323622914723 127.0214794445038 L 555.323622914723 127.0214794445038 L 555.323622914723 127.0214794445038 L 521.8280611651285 127.0214794445038 Z" cy="52.008191777801514" cx="635.5115816184453" j="4" val="18" barHeight="78.01228766670228" barWidth="39.49556174959456"></path><path d="M 641.5115816184453 115.0214794445038 L 641.5115816184453 93.01328766670228 C 641.5115816184453 87.01328766670228 647.5115816184453 81.01328766670228 653.5115816184453 81.01328766670228 L 663.0071433680399 81.01328766670228 C 669.0071433680399 81.01328766670228 675.0071433680399 87.01328766670228 675.0071433680399 93.01328766670228 L 675.0071433680399 115.0214794445038 C 675.0071433680399 121.0214794445038 669.0071433680399 127.0214794445038 663.0071433680399 127.0214794445038 L 653.5115816184453 127.0214794445038 C 647.5115816184453 127.0214794445038 641.5115816184453 121.0214794445038 641.5115816184453 115.0214794445038 Z " fill="var(--bs-primary)" fill-opacity="1" stroke="var(--bs-paper-bg)" stroke-opacity="1" stroke-linecap="round" stroke-width="6" stroke-dasharray="0" class="apexcharts-bar-area " index="0" clip-path="url(#gridRectBarMask150t4qxx)" pathTo="M 641.5115816184453 115.0214794445038 L 641.5115816184453 93.01328766670228 C 641.5115816184453 87.01328766670228 647.5115816184453 81.01328766670228 653.5115816184453 81.01328766670228 L 663.0071433680399 81.01328766670228 C 669.0071433680399 81.01328766670228 675.0071433680399 87.01328766670228 675.0071433680399 93.01328766670228 L 675.0071433680399 115.0214794445038 C 675.0071433680399 121.0214794445038 669.0071433680399 127.0214794445038 663.0071433680399 127.0214794445038 L 653.5115816184453 127.0214794445038 C 647.5115816184453 127.0214794445038 641.5115816184453 121.0214794445038 641.5115816184453 115.0214794445038 Z " pathFrom="M 641.5115816184453 127.0214794445038 L 641.5115816184453 127.0214794445038 L 675.0071433680399 127.0214794445038 L 675.0071433680399 127.0214794445038 L 675.0071433680399 127.0214794445038 L 675.0071433680399 127.0214794445038 L 675.0071433680399 127.0214794445038 L 641.5115816184453 127.0214794445038 Z" cy="78.01228766670228" cx="755.1951020717622" j="5" val="12" barHeight="52.008191777801514" barWidth="39.49556174959456"></path><path d="M 761.1951020717622 115.0214794445038 L 761.1951020717622 106.01533561115266 C 761.1951020717622 100.01533561115266 767.1951020717622 94.01533561115266 773.1951020717622 94.01533561115266 L 782.6906638213568 94.01533561115266 C 788.6906638213568 94.01533561115266 794.6906638213568 100.01533561115266 794.6906638213568 106.01533561115266 L 794.6906638213568 115.0214794445038 C 794.6906638213568 121.0214794445038 788.6906638213568 127.0214794445038 782.6906638213568 127.0214794445038 L 773.1951020717622 127.0214794445038 C 767.1951020717622 127.0214794445038 761.1951020717622 121.0214794445038 761.1951020717622 115.0214794445038 Z " fill="var(--bs-primary)" fill-opacity="1" stroke="var(--bs-paper-bg)" stroke-opacity="1" stroke-linecap="round" stroke-width="6" stroke-dasharray="0" class="apexcharts-bar-area " index="0" clip-path="url(#gridRectBarMask150t4qxx)" pathTo="M 761.1951020717622 115.0214794445038 L 761.1951020717622 106.01533561115266 C 761.1951020717622 100.01533561115266 767.1951020717622 94.01533561115266 773.1951020717622 94.01533561115266 L 782.6906638213568 94.01533561115266 C 788.6906638213568 94.01533561115266 794.6906638213568 100.01533561115266 794.6906638213568 106.01533561115266 L 794.6906638213568 115.0214794445038 C 794.6906638213568 121.0214794445038 788.6906638213568 127.0214794445038 782.6906638213568 127.0214794445038 L 773.1951020717622 127.0214794445038 C 767.1951020717622 127.0214794445038 761.1951020717622 121.0214794445038 761.1951020717622 115.0214794445038 Z " pathFrom="M 761.1951020717622 127.0214794445038 L 761.1951020717622 127.0214794445038 L 794.6906638213568 127.0214794445038 L 794.6906638213568 127.0214794445038 L 794.6906638213568 127.0214794445038 L 794.6906638213568 127.0214794445038 L 794.6906638213568 127.0214794445038 L 761.1951020717622 127.0214794445038 Z" cy="91.01433561115266" cx="874.8786225250791" j="6" val="9" barHeight="39.00614383335114" barWidth="39.49556174959456"></path><g class="apexcharts-bar-goals-markers"><g className="apexcharts-bar-goals-groups" class="apexcharts-hidden-element-shown" clip-path="url(#gridRectMarkerMask150t4qxx)"></g><g className="apexcharts-bar-goals-groups" class="apexcharts-hidden-element-shown" clip-path="url(#gridRectMarkerMask150t4qxx)"></g><g className="apexcharts-bar-goals-groups" class="apexcharts-hidden-element-shown" clip-path="url(#gridRectMarkerMask150t4qxx)"></g><g className="apexcharts-bar-goals-groups" class="apexcharts-hidden-element-shown" clip-path="url(#gridRectMarkerMask150t4qxx)"></g><g className="apexcharts-bar-goals-groups" class="apexcharts-hidden-element-shown" clip-path="url(#gridRectMarkerMask150t4qxx)"></g><g className="apexcharts-bar-goals-groups" class="apexcharts-hidden-element-shown" clip-path="url(#gridRectMarkerMask150t4qxx)"></g><g className="apexcharts-bar-goals-groups" class="apexcharts-hidden-element-shown" clip-path="url(#gridRectMarkerMask150t4qxx)"></g></g></g><g class="apexcharts-series" seriesName="2023" rel="2" data:realIndex="1"><path d="M 43.09397935186114 145.0224794445038 L 43.09397935186114 171.36468720378878 C 43.09397935186114 177.36468720378878 49.09397935186114 183.36468720378878 55.09397935186114 183.36468720378878 L 64.5895411014557 183.36468720378878 C 70.5895411014557 183.36468720378878 76.5895411014557 177.36468720378878 76.5895411014557 171.36468720378878 L 76.5895411014557 145.0224794445038 C 76.5895411014557 139.0224794445038 70.5895411014557 133.0224794445038 64.5895411014557 133.0224794445038 L 55.09397935186114 133.0224794445038 C 49.09397935186114 133.0224794445038 43.09397935186114 139.0224794445038 43.09397935186114 145.0224794445038 Z " fill="var(--bs-info)" fill-opacity="1" stroke="var(--bs-paper-bg)" stroke-opacity="1" stroke-linecap="round" stroke-width="6" stroke-dasharray="0" class="apexcharts-bar-area " index="1" clip-path="url(#gridRectBarMask150t4qxx)" pathTo="M 43.09397935186114 145.0224794445038 L 43.09397935186114 171.36468720378878 C 43.09397935186114 177.36468720378878 49.09397935186114 183.36468720378878 55.09397935186114 183.36468720378878 L 64.5895411014557 183.36468720378878 C 70.5895411014557 183.36468720378878 76.5895411014557 177.36468720378878 76.5895411014557 171.36468720378878 L 76.5895411014557 145.0224794445038 C 76.5895411014557 139.0224794445038 70.5895411014557 133.0224794445038 64.5895411014557 133.0224794445038 L 55.09397935186114 133.0224794445038 C 49.09397935186114 133.0224794445038 43.09397935186114 139.0224794445038 43.09397935186114 145.0224794445038 Z " pathFrom="M 43.09397935186114 133.0224794445038 L 43.09397935186114 133.0224794445038 L 76.5895411014557 133.0224794445038 L 76.5895411014557 133.0224794445038 L 76.5895411014557 133.0224794445038 L 76.5895411014557 133.0224794445038 L 76.5895411014557 133.0224794445038 L 43.09397935186114 133.0224794445038 Z" cy="186.36368720378877" cx="156.77749980517797" j="0" val="-13" barHeight="-56.342207759284975" barWidth="39.49556174959456"></path><path d="M 162.77749980517797 145.0224794445038 L 162.77749980517797 193.0347671112061 C 162.77749980517797 199.0347671112061 168.77749980517797 205.0347671112061 174.77749980517797 205.0347671112061 L 184.27306155477254 205.0347671112061 C 190.27306155477254 205.0347671112061 196.27306155477254 199.0347671112061 196.27306155477254 193.0347671112061 L 196.27306155477254 145.0224794445038 C 196.27306155477254 139.0224794445038 190.27306155477254 133.0224794445038 184.27306155477254 133.0224794445038 L 174.77749980517797 133.0224794445038 C 168.77749980517797 133.0224794445038 162.77749980517797 139.0224794445038 162.77749980517797 145.0224794445038 Z " fill="var(--bs-info)" fill-opacity="1" stroke="var(--bs-paper-bg)" stroke-opacity="1" stroke-linecap="round" stroke-width="6" stroke-dasharray="0" class="apexcharts-bar-area " index="1" clip-path="url(#gridRectBarMask150t4qxx)" pathTo="M 162.77749980517797 145.0224794445038 L 162.77749980517797 193.0347671112061 C 162.77749980517797 199.0347671112061 168.77749980517797 205.0347671112061 174.77749980517797 205.0347671112061 L 184.27306155477254 205.0347671112061 C 190.27306155477254 205.0347671112061 196.27306155477254 199.0347671112061 196.27306155477254 193.0347671112061 L 196.27306155477254 145.0224794445038 C 196.27306155477254 139.0224794445038 190.27306155477254 133.0224794445038 184.27306155477254 133.0224794445038 L 174.77749980517797 133.0224794445038 C 168.77749980517797 133.0224794445038 162.77749980517797 139.0224794445038 162.77749980517797 145.0224794445038 Z " pathFrom="M 162.77749980517797 133.0224794445038 L 162.77749980517797 133.0224794445038 L 196.27306155477254 133.0224794445038 L 196.27306155477254 133.0224794445038 L 196.27306155477254 133.0224794445038 L 196.27306155477254 133.0224794445038 L 196.27306155477254 133.0224794445038 L 162.77749980517797 133.0224794445038 Z" cy="208.0337671112061" cx="276.4610202584948" j="1" val="-18" barHeight="-78.01228766670228" barWidth="39.49556174959456"></path><path d="M 282.4610202584948 145.0224794445038 L 282.4610202584948 154.02862327785493 C 282.4610202584948 160.02862327785493 288.4610202584948 166.02862327785493 294.4610202584948 166.02862327785493 L 303.95658200808936 166.02862327785493 C 309.95658200808936 166.02862327785493 315.95658200808936 160.02862327785493 315.95658200808936 154.02862327785493 L 315.95658200808936 145.0224794445038 C 315.95658200808936 139.0224794445038 309.95658200808936 133.0224794445038 303.95658200808936 133.0224794445038 L 294.4610202584948 133.0224794445038 C 288.4610202584948 133.0224794445038 282.4610202584948 139.0224794445038 282.4610202584948 145.0224794445038 Z " fill="var(--bs-info)" fill-opacity="1" stroke="var(--bs-paper-bg)" stroke-opacity="1" stroke-linecap="round" stroke-width="6" stroke-dasharray="0" class="apexcharts-bar-area " index="1" clip-path="url(#gridRectBarMask150t4qxx)" pathTo="M 282.4610202584948 145.0224794445038 L 282.4610202584948 154.02862327785493 C 282.4610202584948 160.02862327785493 288.4610202584948 166.02862327785493 294.4610202584948 166.02862327785493 L 303.95658200808936 166.02862327785493 C 309.95658200808936 166.02862327785493 315.95658200808936 160.02862327785493 315.95658200808936 154.02862327785493 L 315.95658200808936 145.0224794445038 C 315.95658200808936 139.0224794445038 309.95658200808936 133.0224794445038 303.95658200808936 133.0224794445038 L 294.4610202584948 133.0224794445038 C 288.4610202584948 133.0224794445038 282.4610202584948 139.0224794445038 282.4610202584948 145.0224794445038 Z " pathFrom="M 282.4610202584948 133.0224794445038 L 282.4610202584948 133.0224794445038 L 315.95658200808936 133.0224794445038 L 315.95658200808936 133.0224794445038 L 315.95658200808936 133.0224794445038 L 315.95658200808936 133.0224794445038 L 315.95658200808936 133.0224794445038 L 282.4610202584948 133.0224794445038 Z" cy="169.02762327785493" cx="396.1445407118116" j="2" val="-9" barHeight="-39.00614383335114" barWidth="39.49556174959456"></path><path d="M 402.1445407118116 145.0224794445038 L 402.1445407118116 175.69870318527225 C 402.1445407118116 181.69870318527225 408.1445407118116 187.69870318527225 414.1445407118116 187.69870318527225 L 423.6401024614062 187.69870318527225 C 429.6401024614062 187.69870318527225 435.6401024614062 181.69870318527225 435.6401024614062 175.69870318527225 L 435.6401024614062 145.0224794445038 C 435.6401024614062 139.0224794445038 429.6401024614062 133.0224794445038 423.6401024614062 133.0224794445038 L 414.1445407118116 133.0224794445038 C 408.1445407118116 133.0224794445038 402.1445407118116 139.0224794445038 402.1445407118116 145.0224794445038 Z " fill="var(--bs-info)" fill-opacity="1" stroke="var(--bs-paper-bg)" stroke-opacity="1" stroke-linecap="round" stroke-width="6" stroke-dasharray="0" class="apexcharts-bar-area " index="1" clip-path="url(#gridRectBarMask150t4qxx)" pathTo="M 402.1445407118116 145.0224794445038 L 402.1445407118116 175.69870318527225 C 402.1445407118116 181.69870318527225 408.1445407118116 187.69870318527225 414.1445407118116 187.69870318527225 L 423.6401024614062 187.69870318527225 C 429.6401024614062 187.69870318527225 435.6401024614062 181.69870318527225 435.6401024614062 175.69870318527225 L 435.6401024614062 145.0224794445038 C 435.6401024614062 139.0224794445038 429.6401024614062 133.0224794445038 423.6401024614062 133.0224794445038 L 414.1445407118116 133.0224794445038 C 408.1445407118116 133.0224794445038 402.1445407118116 139.0224794445038 402.1445407118116 145.0224794445038 Z " pathFrom="M 402.1445407118116 133.0224794445038 L 402.1445407118116 133.0224794445038 L 435.6401024614062 133.0224794445038 L 435.6401024614062 133.0224794445038 L 435.6401024614062 133.0224794445038 L 435.6401024614062 133.0224794445038 L 435.6401024614062 133.0224794445038 L 402.1445407118116 133.0224794445038 Z" cy="190.69770318527225" cx="515.8280611651285" j="3" val="-14" barHeight="-60.676223740768435" barWidth="39.49556174959456"></path><path d="M 521.8280611651285 145.0224794445038 L 521.8280611651285 149.6946072963715 C 521.8280611651285 155.6946072963715 527.8280611651285 161.6946072963715 533.8280611651285 161.6946072963715 L 543.323622914723 161.6946072963715 C 549.323622914723 161.6946072963715 555.323622914723 155.6946072963715 555.323622914723 149.6946072963715 L 555.323622914723 145.0224794445038 C 555.323622914723 139.0224794445038 549.323622914723 133.0224794445038 543.323622914723 133.0224794445038 L 533.8280611651285 133.0224794445038 C 527.8280611651285 133.0224794445038 521.8280611651285 139.0224794445038 521.8280611651285 145.0224794445038 Z " fill="var(--bs-info)" fill-opacity="1" stroke="var(--bs-paper-bg)" stroke-opacity="1" stroke-linecap="round" stroke-width="6" stroke-dasharray="0" class="apexcharts-bar-area " index="1" clip-path="url(#gridRectBarMask150t4qxx)" pathTo="M 521.8280611651285 145.0224794445038 L 521.8280611651285 149.6946072963715 C 521.8280611651285 155.6946072963715 527.8280611651285 161.6946072963715 533.8280611651285 161.6946072963715 L 543.323622914723 161.6946072963715 C 549.323622914723 161.6946072963715 555.323622914723 155.6946072963715 555.323622914723 149.6946072963715 L 555.323622914723 145.0224794445038 C 555.323622914723 139.0224794445038 549.323622914723 133.0224794445038 543.323622914723 133.0224794445038 L 533.8280611651285 133.0224794445038 C 527.8280611651285 133.0224794445038 521.8280611651285 139.0224794445038 521.8280611651285 145.0224794445038 Z " pathFrom="M 521.8280611651285 133.0224794445038 L 521.8280611651285 133.0224794445038 L 555.323622914723 133.0224794445038 L 555.323622914723 133.0224794445038 L 555.323622914723 133.0224794445038 L 555.323622914723 133.0224794445038 L 555.323622914723 133.0224794445038 L 521.8280611651285 133.0224794445038 Z" cy="164.69360729637148" cx="635.5115816184453" j="4" val="-8" barHeight="-34.67212785186768" barWidth="39.49556174959456"></path><path d="M 641.5115816184453 145.0224794445038 L 641.5115816184453 188.70075112972262 C 641.5115816184453 194.70075112972262 647.5115816184453 200.70075112972262 653.5115816184453 200.70075112972262 L 663.0071433680399 200.70075112972262 C 669.0071433680399 200.70075112972262 675.0071433680399 194.70075112972262 675.0071433680399 188.70075112972262 L 675.0071433680399 145.0224794445038 C 675.0071433680399 139.0224794445038 669.0071433680399 133.0224794445038 663.0071433680399 133.0224794445038 L 653.5115816184453 133.0224794445038 C 647.5115816184453 133.0224794445038 641.5115816184453 139.0224794445038 641.5115816184453 145.0224794445038 Z " fill="var(--bs-info)" fill-opacity="1" stroke="var(--bs-paper-bg)" stroke-opacity="1" stroke-linecap="round" stroke-width="6" stroke-dasharray="0" class="apexcharts-bar-area " index="1" clip-path="url(#gridRectBarMask150t4qxx)" pathTo="M 641.5115816184453 145.0224794445038 L 641.5115816184453 188.70075112972262 C 641.5115816184453 194.70075112972262 647.5115816184453 200.70075112972262 653.5115816184453 200.70075112972262 L 663.0071433680399 200.70075112972262 C 669.0071433680399 200.70075112972262 675.0071433680399 194.70075112972262 675.0071433680399 188.70075112972262 L 675.0071433680399 145.0224794445038 C 675.0071433680399 139.0224794445038 669.0071433680399 133.0224794445038 663.0071433680399 133.0224794445038 L 653.5115816184453 133.0224794445038 C 647.5115816184453 133.0224794445038 641.5115816184453 139.0224794445038 641.5115816184453 145.0224794445038 Z " pathFrom="M 641.5115816184453 133.0224794445038 L 641.5115816184453 133.0224794445038 L 675.0071433680399 133.0224794445038 L 675.0071433680399 133.0224794445038 L 675.0071433680399 133.0224794445038 L 675.0071433680399 133.0224794445038 L 675.0071433680399 133.0224794445038 L 641.5115816184453 133.0224794445038 Z" cy="203.6997511297226" cx="755.1951020717622" j="5" val="-17" barHeight="-73.67827168521882" barWidth="39.49556174959456"></path><path d="M 761.1951020717622 145.0224794445038 L 761.1951020717622 180.0327191667557 C 761.1951020717622 186.0327191667557 767.1951020717622 192.0327191667557 773.1951020717622 192.0327191667557 L 782.6906638213568 192.0327191667557 C 788.6906638213568 192.0327191667557 794.6906638213568 186.0327191667557 794.6906638213568 180.0327191667557 L 794.6906638213568 145.0224794445038 C 794.6906638213568 139.0224794445038 788.6906638213568 133.0224794445038 782.6906638213568 133.0224794445038 L 773.1951020717622 133.0224794445038 C 767.1951020717622 133.0224794445038 761.1951020717622 139.0224794445038 761.1951020717622 145.0224794445038 Z " fill="var(--bs-info)" fill-opacity="1" stroke="var(--bs-paper-bg)" stroke-opacity="1" stroke-linecap="round" stroke-width="6" stroke-dasharray="0" class="apexcharts-bar-area " index="1" clip-path="url(#gridRectBarMask150t4qxx)" pathTo="M 761.1951020717622 145.0224794445038 L 761.1951020717622 180.0327191667557 C 761.1951020717622 186.0327191667557 767.1951020717622 192.0327191667557 773.1951020717622 192.0327191667557 L 782.6906638213568 192.0327191667557 C 788.6906638213568 192.0327191667557 794.6906638213568 186.0327191667557 794.6906638213568 180.0327191667557 L 794.6906638213568 145.0224794445038 C 794.6906638213568 139.0224794445038 788.6906638213568 133.0224794445038 782.6906638213568 133.0224794445038 L 773.1951020717622 133.0224794445038 C 767.1951020717622 133.0224794445038 761.1951020717622 139.0224794445038 761.1951020717622 145.0224794445038 Z " pathFrom="M 761.1951020717622 133.0224794445038 L 761.1951020717622 133.0224794445038 L 794.6906638213568 133.0224794445038 L 794.6906638213568 133.0224794445038 L 794.6906638213568 133.0224794445038 L 794.6906638213568 133.0224794445038 L 794.6906638213568 133.0224794445038 L 761.1951020717622 133.0224794445038 Z" cy="195.0317191667557" cx="874.8786225250791" j="6" val="-15" barHeight="-65.0102397222519" barWidth="39.49556174959456"></path><g class="apexcharts-bar-goals-markers"><g className="apexcharts-bar-goals-groups" class="apexcharts-hidden-element-shown" clip-path="url(#gridRectMarkerMask150t4qxx)"></g><g className="apexcharts-bar-goals-groups" class="apexcharts-hidden-element-shown" clip-path="url(#gridRectMarkerMask150t4qxx)"></g><g className="apexcharts-bar-goals-groups" class="apexcharts-hidden-element-shown" clip-path="url(#gridRectMarkerMask150t4qxx)"></g><g className="apexcharts-bar-goals-groups" class="apexcharts-hidden-element-shown" clip-path="url(#gridRectMarkerMask150t4qxx)"></g><g className="apexcharts-bar-goals-groups" class="apexcharts-hidden-element-shown" clip-path="url(#gridRectMarkerMask150t4qxx)"></g><g className="apexcharts-bar-goals-groups" class="apexcharts-hidden-element-shown" clip-path="url(#gridRectMarkerMask150t4qxx)"></g><g className="apexcharts-bar-goals-groups" class="apexcharts-hidden-element-shown" clip-path="url(#gridRectMarkerMask150t4qxx)"></g></g></g><g class="apexcharts-datalabels" data:realIndex="0"></g><g class="apexcharts-datalabels" data:realIndex="1"></g></g><line x1="0" y1="0" x2="837.7846431732178" y2="0" stroke="#b6b6b6" stroke-dasharray="0" stroke-width="1" stroke-linecap="butt" class="apexcharts-ycrosshairs"></line><line x1="0" y1="0" x2="837.7846431732178" y2="0" stroke="#b6b6b6" stroke-dasharray="0" stroke-width="0" stroke-linecap="butt" class="apexcharts-ycrosshairs-hidden"></line><g class="apexcharts-xaxis" transform="translate(0, 0)"><g class="apexcharts-xaxis-texts-g" transform="translate(0, -4)"><text x="59.841760226658415" y="244.70079907417298" text-anchor="middle" dominant-baseline="auto" font-size="13px" font-family="var(--bs-font-family-base)" font-weight="400" fill="var(--bs-secondary-color)" class="apexcharts-text apexcharts-xaxis-label " style="font-family: var(--bs-font-family-base);"><tspan>Jan</tspan><title>Jan</title></text><text x="179.52528067997525" y="244.70079907417298" text-anchor="middle" dominant-baseline="auto" font-size="13px" font-family="var(--bs-font-family-base)" font-weight="400" fill="var(--bs-secondary-color)" class="apexcharts-text apexcharts-xaxis-label " style="font-family: var(--bs-font-family-base);"><tspan>Feb</tspan><title>Feb</title></text><text x="299.20880113329207" y="244.70079907417298" text-anchor="middle" dominant-baseline="auto" font-size="13px" font-family="var(--bs-font-family-base)" font-weight="400" fill="var(--bs-secondary-color)" class="apexcharts-text apexcharts-xaxis-label " style="font-family: var(--bs-font-family-base);"><tspan>Mar</tspan><title>Mar</title></text><text x="418.8923215866089" y="244.70079907417298" text-anchor="middle" dominant-baseline="auto" font-size="13px" font-family="var(--bs-font-family-base)" font-weight="400" fill="var(--bs-secondary-color)" class="apexcharts-text apexcharts-xaxis-label " style="font-family: var(--bs-font-family-base);"><tspan>Apr</tspan><title>Apr</title></text><text x="538.5758420399258" y="244.70079907417298" text-anchor="middle" dominant-baseline="auto" font-size="13px" font-family="var(--bs-font-family-base)" font-weight="400" fill="var(--bs-secondary-color)" class="apexcharts-text apexcharts-xaxis-label " style="font-family: var(--bs-font-family-base);"><tspan>May</tspan><title>May</title></text><text x="658.2593624932426" y="244.70079907417298" text-anchor="middle" dominant-baseline="auto" font-size="13px" font-family="var(--bs-font-family-base)" font-weight="400" fill="var(--bs-secondary-color)" class="apexcharts-text apexcharts-xaxis-label " style="font-family: var(--bs-font-family-base);"><tspan>Jun</tspan><title>Jun</title></text><text x="777.9428829465595" y="244.70079907417298" text-anchor="middle" dominant-baseline="auto" font-size="13px" font-family="var(--bs-font-family-base)" font-weight="400" fill="var(--bs-secondary-color)" class="apexcharts-text apexcharts-xaxis-label " style="font-family: var(--bs-font-family-base);"><tspan>Jul</tspan><title>Jul</title></text></g></g><g class="apexcharts-yaxis-annotations"></g><g class="apexcharts-xaxis-annotations"></g><g class="apexcharts-point-annotations"></g></g>
+                                    </svg><div class="apexcharts-tooltip apexcharts-theme-light"><div class="apexcharts-tooltip-title" style="font-family: Helvetica, Arial, sans-serif; font-size: 12px;"></div><div class="apexcharts-tooltip-series-group apexcharts-tooltip-series-group-0" style="order: 1;"><span class="apexcharts-tooltip-marker" style="background-color: var(--bs-primary);"></span><div class="apexcharts-tooltip-text" style="font-family: Helvetica, Arial, sans-serif; font-size: 12px;"><div class="apexcharts-tooltip-y-group"><span class="apexcharts-tooltip-text-y-label"></span><span class="apexcharts-tooltip-text-y-value"></span></div><div class="apexcharts-tooltip-goals-group"><span class="apexcharts-tooltip-text-goals-label"></span><span class="apexcharts-tooltip-text-goals-value"></span></div><div class="apexcharts-tooltip-z-group"><span class="apexcharts-tooltip-text-z-label"></span><span class="apexcharts-tooltip-text-z-value"></span></div></div></div><div class="apexcharts-tooltip-series-group apexcharts-tooltip-series-group-1" style="order: 2;"><span class="apexcharts-tooltip-marker" style="background-color: var(--bs-info);"></span><div class="apexcharts-tooltip-text" style="font-family: Helvetica, Arial, sans-serif; font-size: 12px;"><div class="apexcharts-tooltip-y-group"><span class="apexcharts-tooltip-text-y-label"></span><span class="apexcharts-tooltip-text-y-value"></span></div><div class="apexcharts-tooltip-goals-group"><span class="apexcharts-tooltip-text-goals-label"></span><span class="apexcharts-tooltip-text-goals-value"></span></div><div class="apexcharts-tooltip-z-group"><span class="apexcharts-tooltip-text-z-label"></span><span class="apexcharts-tooltip-text-z-value"></span></div></div></div></div><div class="apexcharts-yaxistooltip apexcharts-yaxistooltip-0 apexcharts-yaxistooltip-left apexcharts-theme-light"><div class="apexcharts-yaxistooltip-text"></div></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="card-body px-xl-9 py-12 d-flex align-items-center flex-column">
+                                <div class="text-center mb-6">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-outline-primary">
+                                            <script>
+                                  document.write(new Date().getFullYear() - 1);
+                                            </script>2024
+                                        </button>
+                                        <button type="button" class="btn btn-outline-primary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+                                            <span class="visually-hidden">Toggle Dropdown</span>
+                                        </button>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="javascript:void(0);">2021</a></li>
+                                            <li><a class="dropdown-item" href="javascript:void(0);">2020</a></li>
+                                            <li><a class="dropdown-item" href="javascript:void(0);">2019</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div id="growthChart" style="min-height: 142px;">
+                                    <div id="apexchartsqlbgnak2" class="apexcharts-canvas apexchartsqlbgnak2 apexcharts-theme-" style="width: 300px; height: 142px;">
+                                        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" class="apexcharts-svg" xmlns:data="ApexChartsNS" transform="translate(0, 0)" width="300" height="142">
+                                            <foreignObject x="0" y="0" width="300" height="142">
+                                                <div class="apexcharts-legend" xmlns="http://www.w3.org/1999/xhtml"></div><style type="text/css">
+                                                                                                                              .apexcharts-flip-y {
+                                                                                                                                  transform: scaleY(-1) translateY(-100%);
+                                                                                                                                  transform-origin: top;
+                                                                                                                                  transform-box: fill-box;
+                                                                                                                              }
+
+                                                                                                                              .apexcharts-flip-x {
+                                                                                                                                  transform: scaleX(-1);
+                                                                                                                                  transform-origin: center;
+                                                                                                                                  transform-box: fill-box;
+                                                                                                                              }
+
+                                                                                                                              .apexcharts-legend {
+                                                                                                                                  display: flex;
+                                                                                                                                  overflow: auto;
+                                                                                                                                  padding: 0 10px;
+                                                                                                                              }
+
+                                                                                                                                  .apexcharts-legend.apexcharts-legend-group-horizontal {
+                                                                                                                                      flex-direction: column;
+                                                                                                                                  }
+
+                                                                                                                              .apexcharts-legend-group {
+                                                                                                                                  display: flex;
+                                                                                                                              }
+
+                                                                                                                              .apexcharts-legend-group-vertical {
+                                                                                                                                  flex-direction: column-reverse;
+                                                                                                                              }
+
+                                                                                                                              .apexcharts-legend.apx-legend-position-bottom, .apexcharts-legend.apx-legend-position-top {
+                                                                                                                                  flex-wrap: wrap
+                                                                                                                              }
+
+                                                                                                                              .apexcharts-legend.apx-legend-position-right, .apexcharts-legend.apx-legend-position-left {
+                                                                                                                                  flex-direction: column;
+                                                                                                                                  bottom: 0;
+                                                                                                                              }
+
+                                                                                                                              .apexcharts-legend.apx-legend-position-bottom.apexcharts-align-left, .apexcharts-legend.apx-legend-position-top.apexcharts-align-left, .apexcharts-legend.apx-legend-position-right, .apexcharts-legend.apx-legend-position-left {
+                                                                                                                                  justify-content: flex-start;
+                                                                                                                                  align-items: flex-start;
+                                                                                                                              }
+
+                                                                                                                              .apexcharts-legend.apx-legend-position-bottom.apexcharts-align-center, .apexcharts-legend.apx-legend-position-top.apexcharts-align-center {
+                                                                                                                                  justify-content: center;
+                                                                                                                                  align-items: center;
+                                                                                                                              }
+
+                                                                                                                              .apexcharts-legend.apx-legend-position-bottom.apexcharts-align-right, .apexcharts-legend.apx-legend-position-top.apexcharts-align-right {
+                                                                                                                                  justify-content: flex-end;
+                                                                                                                                  align-items: flex-end;
+                                                                                                                              }
+
+                                                                                                                              .apexcharts-legend-series {
+                                                                                                                                  cursor: pointer;
+                                                                                                                                  line-height: normal;
+                                                                                                                                  display: flex;
+                                                                                                                                  align-items: center;
+                                                                                                                              }
+
+                                                                                                                              .apexcharts-legend-text {
+                                                                                                                                  position: relative;
+                                                                                                                                  font-size: 14px;
+                                                                                                                              }
+
+                                                                                                                                  .apexcharts-legend-text *, .apexcharts-legend-marker * {
+                                                                                                                                      pointer-events: none;
+                                                                                                                                  }
+
+                                                                                                                              .apexcharts-legend-marker {
+                                                                                                                                  position: relative;
+                                                                                                                                  display: flex;
+                                                                                                                                  align-items: center;
+                                                                                                                                  justify-content: center;
+                                                                                                                                  cursor: pointer;
+                                                                                                                                  margin-right: 1px;
+                                                                                                                              }
+
+                                                                                                                              .apexcharts-legend-series.apexcharts-no-click {
+                                                                                                                                  cursor: auto;
+                                                                                                                              }
+
+                                                                                                                              .apexcharts-legend .apexcharts-hidden-zero-series, .apexcharts-legend .apexcharts-hidden-null-series {
+                                                                                                                                  display: none !important;
+                                                                                                                              }
+
+                                                                                                                              .apexcharts-inactive-legend {
+                                                                                                                                  opacity: 0.45;
+                                                                                                                              }
+                                                </style>
+                                            </foreignObject>
+                                            <g class="apexcharts-inner apexcharts-graphical" transform="translate(50, -25)"><defs><clipPath id="gridRectMaskqlbgnak2"><rect width="200" height="245" x="0" y="0" rx="0" ry="0" opacity="1" stroke-width="0" stroke="none" stroke-dasharray="0" fill="#fff"></rect></clipPath><clipPath id="gridRectBarMaskqlbgnak2"><rect width="206" height="251" x="-3" y="-3" rx="0" ry="0" opacity="1" stroke-width="0" stroke="none" stroke-dasharray="0" fill="#fff"></rect></clipPath><clipPath id="gridRectMarkerMaskqlbgnak2"><rect width="200" height="245" x="0" y="0" rx="0" ry="0" opacity="1" stroke-width="0" stroke="none" stroke-dasharray="0" fill="#fff"></rect></clipPath><clipPath id="forecastMaskqlbgnak2"></clipPath><clipPath id="nonForecastMaskqlbgnak2"></clipPath><linearGradient x1="1" y1="0" x2="0" y2="1"><stop stop-opacity="1" stop-color="var(--bs-primary)" offset="0.3"></stop><stop stop-opacity="0.6" stop-color="var(--bs-paper-bg)" offset="0.7"></stop><stop stop-opacity="0.6" stop-color="var(--bs-paper-bg)" offset="1"></stop></linearGradient><linearGradient x1="1" y1="0" x2="0" y2="1" id="SvgjsLinearGradient1023"><stop stop-opacity="1" stop-color="var(--bs-primary)" offset="0.3"></stop><stop stop-opacity="0.6" stop-color="var(--bs-primary)" offset="0.7"></stop><stop stop-opacity="0.6" stop-color="var(--bs-primary)" offset="1"></stop></linearGradient></defs><g class="apexcharts-radialbar"><g><g class="apexcharts-tracks"><g class="apexcharts-radialbar-track apexcharts-track" rel="1"><path d="M 68.42042682926827 154.6974252130463 A 63.15914634146341 63.15914634146341 0 1 1 131.57957317073172 154.6974252130463 " fill="none" fill-opacity="1" stroke="var(--bs-paper-bg)" stroke-opacity="1" stroke-linecap="butt" stroke-width="15.601219512195122" stroke-dasharray="0" class="apexcharts-radialbar-area" id="apexcharts-radialbarTrack-0" data:pathOrig="M 68.42042682926827 154.6974252130463 A 63.15914634146341 63.15914634146341 0 1 1 131.57957317073172 154.6974252130463 "></path></g></g><g><g class="apexcharts-series apexcharts-radial-series" seriesName="Growth" rel="1" data:realIndex="0"><path d="M 68.42042682926827 154.6974252130463 A 63.15914634146341 63.15914634146341 0 1 1 162.81315392935434 93.39807149162999 " fill="none" fill-opacity="0.85" stroke="url(#SvgjsLinearGradient1023)" stroke-opacity="1" stroke-linecap="butt" stroke-width="15.601219512195122" stroke-dasharray="5" class="apexcharts-radialbar-area apexcharts-radialbar-slice-0" data:angle="234" data:value="78" index="0" j="0" data:pathOrig="M 68.42042682926827 154.6974252130463 A 63.15914634146341 63.15914634146341 0 1 1 162.81315392935434 93.39807149162999 "></path></g><circle r="50.358536585365854" cx="100" cy="100" class="apexcharts-radialbar-hollow" fill="transparent"></circle><g class="apexcharts-datalabels-group" transform="translate(0, 0) scale(1)" style="opacity: 1;"><text x="100" y="115" text-anchor="middle" dominant-baseline="auto" font-size="15px" font-family="var(--bs-font-family-base)" font-weight="500" fill="var(--bs-body-color)" class="apexcharts-text apexcharts-datalabel-label" style="font-family: var(--bs-font-family-base);">Growth</text><text x="100" y="91" text-anchor="middle" dominant-baseline="auto" font-size="22px" font-family="var(--bs-font-family-base)" font-weight="500" fill="var(--bs-heading-color)" class="apexcharts-text apexcharts-datalabel-value" style="font-family: var(--bs-font-family-base);">78%</text></g></g></g></g><line x1="0" y1="0" x2="200" y2="0" stroke="#b6b6b6" stroke-dasharray="0" stroke-width="1" stroke-linecap="butt" class="apexcharts-ycrosshairs"></line><line x1="0" y1="0" x2="200" y2="0" stroke="#b6b6b6" stroke-dasharray="0" stroke-width="0" stroke-linecap="butt" class="apexcharts-ycrosshairs-hidden"></line></g>
+                                            <g class="apexcharts-datalabels-group" transform="translate(0, 0) scale(1)"></g>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="text-center fw-medium my-6">62% Company Growth</div>
+
+                                <div class="d-flex gap-11 justify-content-between">
+                                    <div class="d-flex">
+                                        <div class="avatar me-2">
+                                            <span class="avatar-initial rounded-2 bg-label-primary"><i class="icon-base bx bx-dollar icon-lg text-primary"></i></span>
+                                        </div>
+                                        <div class="d-flex flex-column">
+                                            <small>
+                                                <script>
+                                    document.write(new Date().getFullYear() - 1);
+                                                </script>2024
+                                            </small>
+                                            <h6 class="mb-0">$32.5k</h6>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex">
+                                        <div class="avatar me-2">
+                                            <span class="avatar-initial rounded-2 bg-label-info"><i class="icon-base bx bx-wallet icon-lg text-info"></i></span>
+                                        </div>
+                                        <div class="d-flex flex-column">
+                                            <small>
+                                                <script>
+                                    document.write(new Date().getFullYear() - 2);
+                                                </script>2023
+                                            </small>
+                                            <h6 class="mb-0">$41.2k</h6>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--/ Total Revenue -->
+            <div class="col-12 col-md-8 col-lg-12 col-xxl-4 order-3 order-md-2 profile-report">
+                <div class="row">
+                    <div class="col-6 mb-6 payments">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <div class="card-title d-flex align-items-start justify-content-between mb-4">
+                                    <div class="avatar flex-shrink-0">
+                                        <img src="~/projetemasi/assets/img/icons/unicons/paypal.png" alt="paypal" class="rounded">
+                                    </div>
+                                </div>
+                                <p class="mb-1">Orta Öncelikli</p>
+                                <small class="text-danger fw-medium"><i class="icon-base bx bx-down-arrow-alt"></i> -14.82% Tamamlandı</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 mb-6 transactions">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <div class="card-title d-flex align-items-start justify-content-between mb-4">
+                                    <div class="avatar flex-shrink-0">
+                                        <img src="~/projetemasi/assets/img/icons/unicons/cc-primary.png" alt="Credit Card" class="rounded">
+                                    </div>
+                                </div>
+                                <p class="mb-1">Düşük Öncelikli</p>
+                                <small class="text-success fw-medium"><i class="icon-base bx bx-up-arrow-alt"></i> +28.14% Tamamlandı</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 mb-6 profile-report">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <div class="d-flex justify-content-between align-items-center flex-sm-row flex-column gap-10 flex-wrap">
+                                    <div class="d-flex flex-sm-column flex-row align-items-start justify-content-between">
+                                        <div class="card-title mb-6">
+                                            <h5 class="text-nowrap mb-1">Profile Report</h5>
+                                            <span class="badge bg-label-warning">YEAR 2022</span>
+                                        </div>
+                                        <div class="mt-sm-auto">
+                                            <span class="text-success text-nowrap fw-medium"><i class="icon-base bx bx-up-arrow-alt"></i> 68.2%</span>
+                                            <h4 class="mb-0">$84,686k</h4>
+                                        </div>
+                                    </div>
+                                    <div id="profileReportChart" style="min-height: 75px;" class="">
+                                        <div id="apexchartsmxextkyp" class="apexcharts-canvas apexchartsmxextkyp apexcharts-theme-" style="width: 240px; height: 75px;">
+                                            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" class="apexcharts-svg" xmlns:data="ApexChartsNS" transform="translate(0, 0)" width="240" height="75">
+                                                <foreignObject x="0" y="0" width="240" height="75">
+                                                    <div class="apexcharts-legend" xmlns="http://www.w3.org/1999/xhtml" style="max-height: 37.5px;"></div><style type="text/css">
+                                                                                                                                                              .apexcharts-flip-y {
+                                                                                                                                                                  transform: scaleY(-1) translateY(-100%);
+                                                                                                                                                                  transform-origin: top;
+                                                                                                                                                                  transform-box: fill-box;
+                                                                                                                                                              }
+
+                                                                                                                                                              .apexcharts-flip-x {
+                                                                                                                                                                  transform: scaleX(-1);
+                                                                                                                                                                  transform-origin: center;
+                                                                                                                                                                  transform-box: fill-box;
+                                                                                                                                                              }
+
+                                                                                                                                                              .apexcharts-legend {
+                                                                                                                                                                  display: flex;
+                                                                                                                                                                  overflow: auto;
+                                                                                                                                                                  padding: 0 10px;
+                                                                                                                                                              }
+
+                                                                                                                                                                  .apexcharts-legend.apexcharts-legend-group-horizontal {
+                                                                                                                                                                      flex-direction: column;
+                                                                                                                                                                  }
+
+                                                                                                                                                              .apexcharts-legend-group {
+                                                                                                                                                                  display: flex;
+                                                                                                                                                              }
+
+                                                                                                                                                              .apexcharts-legend-group-vertical {
+                                                                                                                                                                  flex-direction: column-reverse;
+                                                                                                                                                              }
+
+                                                                                                                                                              .apexcharts-legend.apx-legend-position-bottom, .apexcharts-legend.apx-legend-position-top {
+                                                                                                                                                                  flex-wrap: wrap
+                                                                                                                                                              }
+
+                                                                                                                                                              .apexcharts-legend.apx-legend-position-right, .apexcharts-legend.apx-legend-position-left {
+                                                                                                                                                                  flex-direction: column;
+                                                                                                                                                                  bottom: 0;
+                                                                                                                                                              }
+
+                                                                                                                                                              .apexcharts-legend.apx-legend-position-bottom.apexcharts-align-left, .apexcharts-legend.apx-legend-position-top.apexcharts-align-left, .apexcharts-legend.apx-legend-position-right, .apexcharts-legend.apx-legend-position-left {
+                                                                                                                                                                  justify-content: flex-start;
+                                                                                                                                                                  align-items: flex-start;
+                                                                                                                                                              }
+
+                                                                                                                                                              .apexcharts-legend.apx-legend-position-bottom.apexcharts-align-center, .apexcharts-legend.apx-legend-position-top.apexcharts-align-center {
+                                                                                                                                                                  justify-content: center;
+                                                                                                                                                                  align-items: center;
+                                                                                                                                                              }
+
+                                                                                                                                                              .apexcharts-legend.apx-legend-position-bottom.apexcharts-align-right, .apexcharts-legend.apx-legend-position-top.apexcharts-align-right {
+                                                                                                                                                                  justify-content: flex-end;
+                                                                                                                                                                  align-items: flex-end;
+                                                                                                                                                              }
+
+                                                                                                                                                              .apexcharts-legend-series {
+                                                                                                                                                                  cursor: pointer;
+                                                                                                                                                                  line-height: normal;
+                                                                                                                                                                  display: flex;
+                                                                                                                                                                  align-items: center;
+                                                                                                                                                              }
+
+                                                                                                                                                              .apexcharts-legend-text {
+                                                                                                                                                                  position: relative;
+                                                                                                                                                                  font-size: 14px;
+                                                                                                                                                              }
+
+                                                                                                                                                                  .apexcharts-legend-text *, .apexcharts-legend-marker * {
+                                                                                                                                                                      pointer-events: none;
+                                                                                                                                                                  }
+
+                                                                                                                                                              .apexcharts-legend-marker {
+                                                                                                                                                                  position: relative;
+                                                                                                                                                                  display: flex;
+                                                                                                                                                                  align-items: center;
+                                                                                                                                                                  justify-content: center;
+                                                                                                                                                                  cursor: pointer;
+                                                                                                                                                                  margin-right: 1px;
+                                                                                                                                                              }
+
+                                                                                                                                                              .apexcharts-legend-series.apexcharts-no-click {
+                                                                                                                                                                  cursor: auto;
+                                                                                                                                                              }
+
+                                                                                                                                                              .apexcharts-legend .apexcharts-hidden-zero-series, .apexcharts-legend .apexcharts-hidden-null-series {
+                                                                                                                                                                  display: none !important;
+                                                                                                                                                              }
+
+                                                                                                                                                              .apexcharts-inactive-legend {
+                                                                                                                                                                  opacity: 0.45;
+                                                                                                                                                              }
+                                                    </style>
+                                                </foreignObject>
+                                                <rect width="0" height="0" x="0" y="0" rx="0" ry="0" opacity="1" stroke-width="0" stroke="none" stroke-dasharray="0" fill="#fefefe"></rect>
+                                                <g class="apexcharts-datalabels-group" transform="translate(0, 0) scale(1)"></g>
+                                                <g class="apexcharts-datalabels-group" transform="translate(0, 0) scale(1)"></g>
+                                                <g class="apexcharts-yaxis" rel="0" transform="translate(-18, 0)"></g>
+                                                <g class="apexcharts-inner apexcharts-graphical" transform="translate(0, 2.5)"><defs><clipPath id="gridRectMaskmxextkyp"><rect width="232" height="70" x="0" y="0" rx="0" ry="0" opacity="1" stroke-width="0" stroke="none" stroke-dasharray="0" fill="#fff"></rect></clipPath><clipPath id="gridRectBarMaskmxextkyp"><rect width="241" height="79" x="-4.5" y="-4.5" rx="0" ry="0" opacity="1" stroke-width="0" stroke="none" stroke-dasharray="0" fill="#fff"></rect></clipPath><clipPath id="gridRectMarkerMaskmxextkyp"><rect width="232" height="70" x="0" y="0" rx="0" ry="0" opacity="1" stroke-width="0" stroke="none" stroke-dasharray="0" fill="#fff"></rect></clipPath><clipPath id="forecastMaskmxextkyp"></clipPath><clipPath id="nonForecastMaskmxextkyp"></clipPath><filter id="SvgjsFilter1031" filterUnits="userSpaceOnUse" width="200%" height="200%" x="-50%" y="-50%"><feOffset id="SvgjsFeOffset1024" result="offset" in="SourceGraphic" dx="5" dy="10"></feOffset><feGaussianBlur id="SvgjsFeGaussianBlur1025" result="blur" in="offset" stdDeviation="3"></feGaussianBlur><feFlood id="SvgjsFeFlood1026" result="flood" in="SourceGraphic" flood-color="var(--bs-warning)" flood-opacity="0.15"></feFlood><feComposite id="SvgjsFeComposite1027" result="shadow" in="flood" in2="blur" operator="in"></feComposite><feMerge id="SvgjsFeMerge1028" result="SvgjsFeMerge1028" in="SourceGraphic"><feMergeNode id="SvgjsFeMergeNode1029" result="SvgjsFeMergeNode1029" in="shadow"></feMergeNode><feMergeNode id="SvgjsFeMergeNode1030" result="SvgjsFeMergeNode1030" in="SourceGraphic"></feMergeNode></feMerge></filter></defs><line x1="231.49999999999997" y1="0" x2="231.49999999999997" y2="70" stroke="#b6b6b6" stroke-dasharray="3" stroke-linecap="butt" class="apexcharts-xcrosshairs" x="231.49999999999997" y="0" width="1" height="70" fill="#b1b9c4" filter="none" fill-opacity="0.9" stroke-width="1"></line><g class="apexcharts-grid"><g class="apexcharts-gridlines-horizontal" style="display: none;"><line x1="0" y1="0" x2="232" y2="0" stroke="#e0e0e0" stroke-dasharray="0" stroke-linecap="butt" class="apexcharts-gridline"></line><line x1="0" y1="35" x2="232" y2="35" stroke="#e0e0e0" stroke-dasharray="0" stroke-linecap="butt" class="apexcharts-gridline"></line><line x1="0" y1="70" x2="232" y2="70" stroke="#e0e0e0" stroke-dasharray="0" stroke-linecap="butt" class="apexcharts-gridline"></line></g><g class="apexcharts-gridlines-vertical" style="display: none;"></g><line x1="0" y1="70" x2="232" y2="70" stroke="transparent" stroke-dasharray="0" stroke-linecap="butt"></line><line x1="0" y1="1" x2="0" y2="70" stroke="transparent" stroke-dasharray="0" stroke-linecap="butt"></line></g><g class="apexcharts-grid-borders" style="display: none;"></g><g class="apexcharts-line-series apexcharts-plot-series"><g class="apexcharts-series" zIndex="0" seriesName="series-1" data:longestSeries="true" rel="1" data:realIndex="0"><path d="M 0 66.5C 16.24 66.5 30.16 10.5 46.4 10.5C 62.64 10.5 76.56 54.25 92.8 54.25C 109.03999999999999 54.25 122.96 19.25 139.2 19.25C 155.44 19.25 169.35999999999999 33.25 185.6 33.25C 201.83999999999997 33.25 215.76 5.25 231.99999999999997 5.25" fill="none" fill-opacity="1" stroke="var(--bs-warning)" stroke-opacity="1" stroke-linecap="butt" stroke-width="5" stroke-dasharray="0" class="apexcharts-line" index="0" clip-path="url(#gridRectMaskmxextkyp)" filter="url(#SvgjsFilter1031)" pathTo="M 0 66.5C 16.24 66.5 30.16 10.5 46.4 10.5C 62.64 10.5 76.56 54.25 92.8 54.25C 109.03999999999999 54.25 122.96 19.25 139.2 19.25C 155.44 19.25 169.35999999999999 33.25 185.6 33.25C 201.83999999999997 33.25 215.76 5.25 231.99999999999997 5.25" pathFrom="M 0 70 L 0 70 L 46.4 70 L 92.8 70 L 139.2 70 L 185.6 70 L 231.99999999999997 70" fill-rule="evenodd"></path><g class="apexcharts-series-markers-wrap apexcharts-hidden-element-shown" data:realIndex="0"><g class="apexcharts-series-markers"><path d="M0,0" fill="var(--bs-warning)" fill-opacity="1" stroke="#ffffff" stroke-opacity="0.9" stroke-linecap="butt" stroke-width="2" stroke-dasharray="0" cx="231.99999999999997" cy="0" shape="circle" class="apexcharts-marker wferzianbl no-pointer-events" default-marker-size="0"></path></g></g></g><g class="apexcharts-datalabels" data:realIndex="0"></g></g><line x1="0" y1="0" x2="232" y2="0" stroke="#b6b6b6" stroke-dasharray="0" stroke-width="1" stroke-linecap="butt" class="apexcharts-ycrosshairs"></line><line x1="0" y1="0" x2="232" y2="0" stroke="#b6b6b6" stroke-dasharray="0" stroke-width="0" stroke-linecap="butt" class="apexcharts-ycrosshairs-hidden"></line><g class="apexcharts-xaxis" transform="translate(0, 0)"><g class="apexcharts-xaxis-texts-g" transform="translate(0, -4)"></g></g><g class="apexcharts-yaxis-annotations"></g><g class="apexcharts-xaxis-annotations"></g><g class="apexcharts-point-annotations"></g></g>
+                                            </svg><div class="apexcharts-tooltip apexcharts-theme-light" style="left: 114.287px; top: 8.25px;"><div class="apexcharts-tooltip-title" style="font-family: Helvetica, Arial, sans-serif; font-size: 12px;">6</div><div class="apexcharts-tooltip-series-group apexcharts-tooltip-series-group-0 apexcharts-active" style="order: 1; display: flex;"><span class="apexcharts-tooltip-marker" style="background-color: var(--bs-warning);"></span><div class="apexcharts-tooltip-text" style="font-family: Helvetica, Arial, sans-serif; font-size: 12px;"><div class="apexcharts-tooltip-y-group"><span class="apexcharts-tooltip-text-y-label">series-1: </span><span class="apexcharts-tooltip-text-y-value">285</span></div><div class="apexcharts-tooltip-goals-group"><span class="apexcharts-tooltip-text-goals-label"></span><span class="apexcharts-tooltip-text-goals-value"></span></div><div class="apexcharts-tooltip-z-group"><span class="apexcharts-tooltip-text-z-label"></span><span class="apexcharts-tooltip-text-z-value"></span></div></div></div></div><div class="apexcharts-yaxistooltip apexcharts-yaxistooltip-0 apexcharts-yaxistooltip-left apexcharts-theme-light"><div class="apexcharts-yaxistooltip-text"></div></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <!-- Order Statistics -->
+            <div class="col-md-6 col-lg-4 col-xl-4 order-0 mb-6">
+                <div class="card h-100">
+                    <div class="card-header d-flex justify-content-between">
+                        <div class="card-title mb-0">
+                            <h5 class="mb-1 me-2">Order Statistics</h5>
+                            <p class="card-subtitle">42.82k Total Sales</p>
+                        </div>
+                        <div class="dropdown">
+                            <button class="btn text-body-secondary p-0" type="button" id="orederStatistics" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="icon-base bx bx-dots-vertical-rounded icon-lg"></i>
+                            </button>
+                            <div class="dropdown-menu dropdown-menu-end" aria-labelledby="orederStatistics">
+                                <a class="dropdown-item" href="javascript:void(0);">Select All</a>
+                                <a class="dropdown-item" href="javascript:void(0);">Refresh</a>
+                                <a class="dropdown-item" href="javascript:void(0);">Share</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between align-items-center mb-6">
+                            <div class="d-flex flex-column align-items-center gap-1">
+                                <h3 class="mb-1">8,258</h3>
+                                <small>Total Orders</small>
+                            </div>
+                            <div id="orderStatisticsChart" style="min-height: 118px;">
+                                <div id="apexchartsb6j11jhjf" class="apexcharts-canvas apexchartsb6j11jhjf apexcharts-theme-" style="width: 136px; height: 118px;">
+                                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" class="apexcharts-svg" xmlns:data="ApexChartsNS" transform="translate(15, 0)" width="136" height="118">
+                                        <foreignObject x="0" y="0" width="136" height="118">
+                                            <div class="apexcharts-legend" xmlns="http://www.w3.org/1999/xhtml"></div><style type="text/css">
+                                                                                                                          .apexcharts-flip-y {
+                                                                                                                              transform: scaleY(-1) translateY(-100%);
+                                                                                                                              transform-origin: top;
+                                                                                                                              transform-box: fill-box;
+                                                                                                                          }
+
+                                                                                                                          .apexcharts-flip-x {
+                                                                                                                              transform: scaleX(-1);
+                                                                                                                              transform-origin: center;
+                                                                                                                              transform-box: fill-box;
+                                                                                                                          }
+
+                                                                                                                          .apexcharts-legend {
+                                                                                                                              display: flex;
+                                                                                                                              overflow: auto;
+                                                                                                                              padding: 0 10px;
+                                                                                                                          }
+
+                                                                                                                              .apexcharts-legend.apexcharts-legend-group-horizontal {
+                                                                                                                                  flex-direction: column;
+                                                                                                                              }
+
+                                                                                                                          .apexcharts-legend-group {
+                                                                                                                              display: flex;
+                                                                                                                          }
+
+                                                                                                                          .apexcharts-legend-group-vertical {
+                                                                                                                              flex-direction: column-reverse;
+                                                                                                                          }
+
+                                                                                                                          .apexcharts-legend.apx-legend-position-bottom, .apexcharts-legend.apx-legend-position-top {
+                                                                                                                              flex-wrap: wrap
+                                                                                                                          }
+
+                                                                                                                          .apexcharts-legend.apx-legend-position-right, .apexcharts-legend.apx-legend-position-left {
+                                                                                                                              flex-direction: column;
+                                                                                                                              bottom: 0;
+                                                                                                                          }
+
+                                                                                                                          .apexcharts-legend.apx-legend-position-bottom.apexcharts-align-left, .apexcharts-legend.apx-legend-position-top.apexcharts-align-left, .apexcharts-legend.apx-legend-position-right, .apexcharts-legend.apx-legend-position-left {
+                                                                                                                              justify-content: flex-start;
+                                                                                                                              align-items: flex-start;
+                                                                                                                          }
+
+                                                                                                                          .apexcharts-legend.apx-legend-position-bottom.apexcharts-align-center, .apexcharts-legend.apx-legend-position-top.apexcharts-align-center {
+                                                                                                                              justify-content: center;
+                                                                                                                              align-items: center;
+                                                                                                                          }
+
+                                                                                                                          .apexcharts-legend.apx-legend-position-bottom.apexcharts-align-right, .apexcharts-legend.apx-legend-position-top.apexcharts-align-right {
+                                                                                                                              justify-content: flex-end;
+                                                                                                                              align-items: flex-end;
+                                                                                                                          }
+
+                                                                                                                          .apexcharts-legend-series {
+                                                                                                                              cursor: pointer;
+                                                                                                                              line-height: normal;
+                                                                                                                              display: flex;
+                                                                                                                              align-items: center;
+                                                                                                                          }
+
+                                                                                                                          .apexcharts-legend-text {
+                                                                                                                              position: relative;
+                                                                                                                              font-size: 14px;
+                                                                                                                          }
+
+                                                                                                                              .apexcharts-legend-text *, .apexcharts-legend-marker * {
+                                                                                                                                  pointer-events: none;
+                                                                                                                              }
+
+                                                                                                                          .apexcharts-legend-marker {
+                                                                                                                              position: relative;
+                                                                                                                              display: flex;
+                                                                                                                              align-items: center;
+                                                                                                                              justify-content: center;
+                                                                                                                              cursor: pointer;
+                                                                                                                              margin-right: 1px;
+                                                                                                                          }
+
+                                                                                                                          .apexcharts-legend-series.apexcharts-no-click {
+                                                                                                                              cursor: auto;
+                                                                                                                          }
+
+                                                                                                                          .apexcharts-legend .apexcharts-hidden-zero-series, .apexcharts-legend .apexcharts-hidden-null-series {
+                                                                                                                              display: none !important;
+                                                                                                                          }
+
+                                                                                                                          .apexcharts-inactive-legend {
+                                                                                                                              opacity: 0.45;
+                                                                                                                          }
+                                            </style>
+                                        </foreignObject>
+                                        <g class="apexcharts-inner apexcharts-graphical" transform="translate(0, 0)"><defs><clipPath id="gridRectMaskb6j11jhjf"><rect width="121" height="165" x="0" y="0" rx="0" ry="0" opacity="1" stroke-width="0" stroke="none" stroke-dasharray="0" fill="#fff"></rect></clipPath><clipPath id="gridRectBarMaskb6j11jhjf"><rect width="130" height="174" x="-4.5" y="-4.5" rx="0" ry="0" opacity="1" stroke-width="0" stroke="none" stroke-dasharray="0" fill="#fff"></rect></clipPath><clipPath id="gridRectMarkerMaskb6j11jhjf"><rect width="121" height="165" x="0" y="0" rx="0" ry="0" opacity="1" stroke-width="0" stroke="none" stroke-dasharray="0" fill="#fff"></rect></clipPath><clipPath id="forecastMaskb6j11jhjf"></clipPath><clipPath id="nonForecastMaskb6j11jhjf"></clipPath></defs><g class="apexcharts-pie"><g transform="translate(0, 0) scale(1)"><circle r="37.518292682926834" cx="60.5" cy="60.5" fill="transparent"></circle><g class="apexcharts-slices"><g class="apexcharts-series apexcharts-pie-series" seriesName="Electronic" rel="1" data:realIndex="0"><path d="M 60.5 10.475609756097555 A 50.024390243902445 50.024390243902445 0 0 1 110.52439024390245 60.5 L 98.01829268292684 60.5 A 37.518292682926834 37.518292682926834 0 0 0 60.5 22.981707317073166 L 60.5 10.475609756097555 z " fill="var(--bs-success)" fill-opacity="1" stroke="var(--bs-paper-bg)" stroke-opacity="1" stroke-linecap="butt" stroke-width="5" stroke-dasharray="0" class="apexcharts-pie-area apexcharts-donut-slice-0" index="0" j="0" data:angle="90" data:startAngle="0" data:strokeWidth="5" data:value="50" data:pathOrig="M 60.5 10.475609756097555 A 50.024390243902445 50.024390243902445 0 0 1 110.52439024390245 60.5 L 98.01829268292684 60.5 A 37.518292682926834 37.518292682926834 0 0 0 60.5 22.981707317073166 L 60.5 10.475609756097555 z "></path></g><g class="apexcharts-series apexcharts-pie-series" seriesName="Sports" rel="2" data:realIndex="1"><path d="M 110.52439024390245 60.5 A 50.024390243902445 50.024390243902445 0 0 1 15.92794192413799 83.21059792599539 L 27.07095644310349 77.53294844449654 A 37.518292682926834 37.518292682926834 0 0 0 98.01829268292684 60.5 L 110.52439024390245 60.5 z " fill="var(--bs-primary)" fill-opacity="1" stroke="var(--bs-paper-bg)" stroke-opacity="1" stroke-linecap="butt" stroke-width="5" stroke-dasharray="0" class="apexcharts-pie-area apexcharts-donut-slice-1" index="0" j="1" data:angle="153" data:startAngle="90" data:strokeWidth="5" data:value="85" data:pathOrig="M 110.52439024390245 60.5 A 50.024390243902445 50.024390243902445 0 0 1 15.92794192413799 83.21059792599539 L 27.07095644310349 77.53294844449654 A 37.518292682926834 37.518292682926834 0 0 0 98.01829268292684 60.5 L 110.52439024390245 60.5 z "></path></g><g class="apexcharts-series apexcharts-pie-series" seriesName="Decor" rel="3" data:realIndex="2"><path d="M 15.92794192413799 83.21059792599539 A 50.024390243902445 50.024390243902445 0 0 1 12.923977684844871 45.04161328138981 L 24.817983263633657 48.90620996104236 A 37.518292682926834 37.518292682926834 0 0 0 27.07095644310349 77.53294844449654 L 15.92794192413799 83.21059792599539 z " fill="var(--bs-secondary)" fill-opacity="1" stroke="var(--bs-paper-bg)" stroke-opacity="1" stroke-linecap="butt" stroke-width="5" stroke-dasharray="0" class="apexcharts-pie-area apexcharts-donut-slice-2" index="0" j="2" data:angle="45" data:startAngle="243" data:strokeWidth="5" data:value="25" data:pathOrig="M 15.92794192413799 83.21059792599539 A 50.024390243902445 50.024390243902445 0 0 1 12.923977684844871 45.04161328138981 L 24.817983263633657 48.90620996104236 A 37.518292682926834 37.518292682926834 0 0 0 27.07095644310349 77.53294844449654 L 15.92794192413799 83.21059792599539 z "></path></g><g class="apexcharts-series apexcharts-pie-series" seriesName="Fashion" rel="4" data:realIndex="3"><path d="M 12.923977684844871 45.04161328138981 A 50.024390243902445 50.024390243902445 0 0 1 60.491269096883734 10.475610518012587 L 60.4934518226628 22.98170788850944 A 37.518292682926834 37.518292682926834 0 0 0 24.817983263633657 48.90620996104236 L 12.923977684844871 45.04161328138981 z " fill="var(--bs-info)" fill-opacity="1" stroke="var(--bs-paper-bg)" stroke-opacity="1" stroke-linecap="butt" stroke-width="5" stroke-dasharray="0" class="apexcharts-pie-area apexcharts-donut-slice-3" index="0" j="3" data:angle="72" data:startAngle="288" data:strokeWidth="5" data:value="40" data:pathOrig="M 12.923977684844871 45.04161328138981 A 50.024390243902445 50.024390243902445 0 0 1 60.491269096883734 10.475610518012587 L 60.4934518226628 22.98170788850944 A 37.518292682926834 37.518292682926834 0 0 0 24.817983263633657 48.90620996104236 L 12.923977684844871 45.04161328138981 z "></path></g></g></g><g class="apexcharts-datalabels-group" transform="translate(0, 0) scale(1)"><text x="60.5" y="77.5" text-anchor="middle" dominant-baseline="auto" font-size="13px" font-family="Helvetica, Arial, sans-serif" font-weight="400" fill="var(--bs-body-color)" class="apexcharts-text apexcharts-datalabel-label" style="font-family: Helvetica, Arial, sans-serif;">Weekly</text><text x="60.5" y="59.5" text-anchor="middle" dominant-baseline="auto" font-size="1.125rem" font-family="var(--bs-font-family-base)" font-weight="500" fill="var(--bs-heading-color)" class="apexcharts-text apexcharts-datalabel-value" style="font-family: var(--bs-font-family-base);">38%</text></g></g><line x1="0" y1="0" x2="121" y2="0" stroke="#b6b6b6" stroke-dasharray="0" stroke-width="1" stroke-linecap="butt" class="apexcharts-ycrosshairs"></line><line x1="0" y1="0" x2="121" y2="0" stroke="#b6b6b6" stroke-dasharray="0" stroke-width="0" stroke-linecap="butt" class="apexcharts-ycrosshairs-hidden"></line></g>
+                                        <g class="apexcharts-datalabels-group" transform="translate(0, 0) scale(1)"></g>
+                                    </svg><div class="apexcharts-tooltip apexcharts-theme-dark"><div class="apexcharts-tooltip-series-group apexcharts-tooltip-series-group-0" style="order: 1;"><span class="apexcharts-tooltip-marker" style="background-color: var(--bs-success);"></span><div class="apexcharts-tooltip-text" style="font-family: Helvetica, Arial, sans-serif; font-size: 12px;"><div class="apexcharts-tooltip-y-group"><span class="apexcharts-tooltip-text-y-label"></span><span class="apexcharts-tooltip-text-y-value"></span></div><div class="apexcharts-tooltip-goals-group"><span class="apexcharts-tooltip-text-goals-label"></span><span class="apexcharts-tooltip-text-goals-value"></span></div><div class="apexcharts-tooltip-z-group"><span class="apexcharts-tooltip-text-z-label"></span><span class="apexcharts-tooltip-text-z-value"></span></div></div></div><div class="apexcharts-tooltip-series-group apexcharts-tooltip-series-group-1" style="order: 2;"><span class="apexcharts-tooltip-marker" style="background-color: var(--bs-primary);"></span><div class="apexcharts-tooltip-text" style="font-family: Helvetica, Arial, sans-serif; font-size: 12px;"><div class="apexcharts-tooltip-y-group"><span class="apexcharts-tooltip-text-y-label"></span><span class="apexcharts-tooltip-text-y-value"></span></div><div class="apexcharts-tooltip-goals-group"><span class="apexcharts-tooltip-text-goals-label"></span><span class="apexcharts-tooltip-text-goals-value"></span></div><div class="apexcharts-tooltip-z-group"><span class="apexcharts-tooltip-text-z-label"></span><span class="apexcharts-tooltip-text-z-value"></span></div></div></div><div class="apexcharts-tooltip-series-group apexcharts-tooltip-series-group-2" style="order: 3;"><span class="apexcharts-tooltip-marker" style="background-color: var(--bs-secondary);"></span><div class="apexcharts-tooltip-text" style="font-family: Helvetica, Arial, sans-serif; font-size: 12px;"><div class="apexcharts-tooltip-y-group"><span class="apexcharts-tooltip-text-y-label"></span><span class="apexcharts-tooltip-text-y-value"></span></div><div class="apexcharts-tooltip-goals-group"><span class="apexcharts-tooltip-text-goals-label"></span><span class="apexcharts-tooltip-text-goals-value"></span></div><div class="apexcharts-tooltip-z-group"><span class="apexcharts-tooltip-text-z-label"></span><span class="apexcharts-tooltip-text-z-value"></span></div></div></div><div class="apexcharts-tooltip-series-group apexcharts-tooltip-series-group-3" style="order: 4;"><span class="apexcharts-tooltip-marker" style="background-color: var(--bs-info);"></span><div class="apexcharts-tooltip-text" style="font-family: Helvetica, Arial, sans-serif; font-size: 12px;"><div class="apexcharts-tooltip-y-group"><span class="apexcharts-tooltip-text-y-label"></span><span class="apexcharts-tooltip-text-y-value"></span></div><div class="apexcharts-tooltip-goals-group"><span class="apexcharts-tooltip-text-goals-label"></span><span class="apexcharts-tooltip-text-goals-value"></span></div><div class="apexcharts-tooltip-z-group"><span class="apexcharts-tooltip-text-z-label"></span><span class="apexcharts-tooltip-text-z-value"></span></div></div></div></div>
+                                </div>
+                            </div>
+                        </div>
+                        <ul class="p-0 m-0">
+                            <li class="d-flex align-items-center mb-5">
+                                <div class="avatar flex-shrink-0 me-3">
+                                    <span class="avatar-initial rounded bg-label-primary"><i class="icon-base bx bx-mobile-alt"></i></span>
+                                </div>
+                                <div class="d-flex w-100 flex-wrap align-items-center justify-content-between gap-2">
+                                    <div class="me-2">
+                                        <h6 class="mb-0">Electronic</h6>
+                                        <small>Mobile, Earbuds, TV</small>
+                                    </div>
+                                    <div class="user-progress">
+                                        <h6 class="mb-0">82.5k</h6>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="d-flex align-items-center mb-5">
+                                <div class="avatar flex-shrink-0 me-3">
+                                    <span class="avatar-initial rounded bg-label-success"><i class="icon-base bx bx-closet"></i></span>
+                                </div>
+                                <div class="d-flex w-100 flex-wrap align-items-center justify-content-between gap-2">
+                                    <div class="me-2">
+                                        <h6 class="mb-0">Fashion</h6>
+                                        <small>T-shirt, Jeans, Shoes</small>
+                                    </div>
+                                    <div class="user-progress">
+                                        <h6 class="mb-0">23.8k</h6>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="d-flex align-items-center mb-5">
+                                <div class="avatar flex-shrink-0 me-3">
+                                    <span class="avatar-initial rounded bg-label-info"><i class="icon-base bx bx-home-alt"></i></span>
+                                </div>
+                                <div class="d-flex w-100 flex-wrap align-items-center justify-content-between gap-2">
+                                    <div class="me-2">
+                                        <h6 class="mb-0">Decor</h6>
+                                        <small>Fine Art, Dining</small>
+                                    </div>
+                                    <div class="user-progress">
+                                        <h6 class="mb-0">849k</h6>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="d-flex align-items-center">
+                                <div class="avatar flex-shrink-0 me-3">
+                                    <span class="avatar-initial rounded bg-label-secondary"><i class="icon-base bx bx-football"></i></span>
+                                </div>
+                                <div class="d-flex w-100 flex-wrap align-items-center justify-content-between gap-2">
+                                    <div class="me-2">
+                                        <h6 class="mb-0">Sports</h6>
+                                        <small>Football, Cricket Kit</small>
+                                    </div>
+                                    <div class="user-progress">
+                                        <h6 class="mb-0">99</h6>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!--/ Order Statistics -->
+            <!-- Expense Overview -->
+            <div class="col-md-6 col-lg-4 order-1 mb-6">
+                <div class="card h-100">
+                    <div class="card-header nav-align-top">
+                        <ul class="nav nav-pills flex-wrap row-gap-2" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <button type="button" class="nav-link active" role="tab" data-bs-toggle="tab" data-bs-target="#navs-tabs-line-card-income" aria-controls="navs-tabs-line-card-income" aria-selected="true">
+                                    Income
+                                </button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button type="button" class="nav-link" role="tab" aria-selected="false" tabindex="-1">Expenses</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button type="button" class="nav-link" role="tab" aria-selected="false" tabindex="-1">Profit</button>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="card-body">
+                        <div class="tab-content p-0">
+                            <div class="tab-pane fade show active" id="navs-tabs-line-card-income" role="tabpanel">
+                                <div class="d-flex mb-6">
+                                    <div class="avatar flex-shrink-0 me-3">
+                                        <img src="~/projetemasi/assets/img/icons/unicons/wallet.png" alt="User">
+                                    </div>
+                                    <div>
+                                        <p class="mb-0">Total Balance</p>
+                                        <div class="d-flex align-items-center">
+                                            <h6 class="mb-0 me-1">$459.10</h6>
+                                            <small class="text-success fw-medium">
+                                                <i class="icon-base bx bx-chevron-up icon-lg"></i>
+                                                42.9%
+                                            </small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="incomeChart" style="min-height: 200px;">
+                                    <div id="apexchartsgfiqjjxek" class="apexcharts-canvas apexchartsgfiqjjxek apexcharts-theme-" style="width: 406px; height: 200px;">
+                                        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" class="apexcharts-svg apexcharts-zoomable" xmlns:data="ApexChartsNS" transform="translate(0, 0)" width="406" height="200">
+                                            <foreignObject x="0" y="0" width="406" height="200">
+                                                <div class="apexcharts-legend" xmlns="http://www.w3.org/1999/xhtml" style="max-height: 100px;"></div><style type="text/css">
+                                                                                                                                                         .apexcharts-flip-y {
+                                                                                                                                                             transform: scaleY(-1) translateY(-100%);
+                                                                                                                                                             transform-origin: top;
+                                                                                                                                                             transform-box: fill-box;
+                                                                                                                                                         }
+
+                                                                                                                                                         .apexcharts-flip-x {
+                                                                                                                                                             transform: scaleX(-1);
+                                                                                                                                                             transform-origin: center;
+                                                                                                                                                             transform-box: fill-box;
+                                                                                                                                                         }
+
+                                                                                                                                                         .apexcharts-legend {
+                                                                                                                                                             display: flex;
+                                                                                                                                                             overflow: auto;
+                                                                                                                                                             padding: 0 10px;
+                                                                                                                                                         }
+
+                                                                                                                                                             .apexcharts-legend.apexcharts-legend-group-horizontal {
+                                                                                                                                                                 flex-direction: column;
+                                                                                                                                                             }
+
+                                                                                                                                                         .apexcharts-legend-group {
+                                                                                                                                                             display: flex;
+                                                                                                                                                         }
+
+                                                                                                                                                         .apexcharts-legend-group-vertical {
+                                                                                                                                                             flex-direction: column-reverse;
+                                                                                                                                                         }
+
+                                                                                                                                                         .apexcharts-legend.apx-legend-position-bottom, .apexcharts-legend.apx-legend-position-top {
+                                                                                                                                                             flex-wrap: wrap
+                                                                                                                                                         }
+
+                                                                                                                                                         .apexcharts-legend.apx-legend-position-right, .apexcharts-legend.apx-legend-position-left {
+                                                                                                                                                             flex-direction: column;
+                                                                                                                                                             bottom: 0;
+                                                                                                                                                         }
+
+                                                                                                                                                         .apexcharts-legend.apx-legend-position-bottom.apexcharts-align-left, .apexcharts-legend.apx-legend-position-top.apexcharts-align-left, .apexcharts-legend.apx-legend-position-right, .apexcharts-legend.apx-legend-position-left {
+                                                                                                                                                             justify-content: flex-start;
+                                                                                                                                                             align-items: flex-start;
+                                                                                                                                                         }
+
+                                                                                                                                                         .apexcharts-legend.apx-legend-position-bottom.apexcharts-align-center, .apexcharts-legend.apx-legend-position-top.apexcharts-align-center {
+                                                                                                                                                             justify-content: center;
+                                                                                                                                                             align-items: center;
+                                                                                                                                                         }
+
+                                                                                                                                                         .apexcharts-legend.apx-legend-position-bottom.apexcharts-align-right, .apexcharts-legend.apx-legend-position-top.apexcharts-align-right {
+                                                                                                                                                             justify-content: flex-end;
+                                                                                                                                                             align-items: flex-end;
+                                                                                                                                                         }
+
+                                                                                                                                                         .apexcharts-legend-series {
+                                                                                                                                                             cursor: pointer;
+                                                                                                                                                             line-height: normal;
+                                                                                                                                                             display: flex;
+                                                                                                                                                             align-items: center;
+                                                                                                                                                         }
+
+                                                                                                                                                         .apexcharts-legend-text {
+                                                                                                                                                             position: relative;
+                                                                                                                                                             font-size: 14px;
+                                                                                                                                                         }
+
+                                                                                                                                                             .apexcharts-legend-text *, .apexcharts-legend-marker * {
+                                                                                                                                                                 pointer-events: none;
+                                                                                                                                                             }
+
+                                                                                                                                                         .apexcharts-legend-marker {
+                                                                                                                                                             position: relative;
+                                                                                                                                                             display: flex;
+                                                                                                                                                             align-items: center;
+                                                                                                                                                             justify-content: center;
+                                                                                                                                                             cursor: pointer;
+                                                                                                                                                             margin-right: 1px;
+                                                                                                                                                         }
+
+                                                                                                                                                         .apexcharts-legend-series.apexcharts-no-click {
+                                                                                                                                                             cursor: auto;
+                                                                                                                                                         }
+
+                                                                                                                                                         .apexcharts-legend .apexcharts-hidden-zero-series, .apexcharts-legend .apexcharts-hidden-null-series {
+                                                                                                                                                             display: none !important;
+                                                                                                                                                         }
+
+                                                                                                                                                         .apexcharts-inactive-legend {
+                                                                                                                                                             opacity: 0.45;
+                                                                                                                                                         }
+                                                </style>
+                                            </foreignObject>
+                                            <rect width="0" height="0" x="0" y="0" rx="0" ry="0" opacity="1" stroke-width="0" stroke="none" stroke-dasharray="0" fill="#fefefe"></rect>
+                                            <g class="apexcharts-datalabels-group" transform="translate(0, 0) scale(1)"></g>
+                                            <g class="apexcharts-datalabels-group" transform="translate(0, 0) scale(1)"></g>
+                                            <g class="apexcharts-yaxis" rel="0" transform="translate(-8, 0)"><g class="apexcharts-yaxis-texts-g"></g></g>
+                                            <g class="apexcharts-inner apexcharts-graphical" transform="translate(10, 10)">
+                                                <defs><clipPath id="gridRectMaskgfiqjjxek"><rect width="378.6875" height="159.70079907417298" x="0" y="0" rx="0" ry="0" opacity="1" stroke-width="0" stroke="none" stroke-dasharray="0" fill="#fff"></rect></clipPath><clipPath id="gridRectBarMaskgfiqjjxek"><rect width="385.6875" height="166.70079907417298" x="-3.5" y="-3.5" rx="0" ry="0" opacity="1" stroke-width="0" stroke="none" stroke-dasharray="0" fill="#fff"></rect></clipPath><clipPath id="gridRectMarkerMaskgfiqjjxek"><rect width="392.6875" height="173.70079907417298" x="-7" y="-7" rx="0" ry="0" opacity="1" stroke-width="0" stroke="none" stroke-dasharray="0" fill="#fff"></rect></clipPath><clipPath id="forecastMaskgfiqjjxek"></clipPath><clipPath id="nonForecastMaskgfiqjjxek"></clipPath><linearGradient x1="0" y1="0" x2="0" y2="1" id="SvgjsLinearGradient1032"><stop stop-opacity="0.3" stop-color="var(--bs-primary)" offset="0"></stop><stop stop-opacity="0.3" stop-color="var(--bs-paper-bg)" offset="1"></stop><stop stop-opacity="0.3" stop-color="var(--bs-paper-bg)" offset="1"></stop></linearGradient></defs>
+                                                <line x1="0" y1="0" x2="0" y2="159.70079907417298" stroke="#b6b6b6" stroke-dasharray="3" stroke-linecap="butt" class="apexcharts-xcrosshairs" x="0" y="0" width="1" height="159.70079907417298" fill="#b1b9c4" filter="none" fill-opacity="0.9" stroke-width="1"></line>
+                                                <g class="apexcharts-grid"><g class="apexcharts-gridlines-horizontal"><line x1="0" y1="39.925199768543244" x2="378.6875" y2="39.925199768543244" stroke="var(--bs-border-color)" stroke-dasharray="8" stroke-linecap="butt" class="apexcharts-gridline"></line><line x1="0" y1="79.85039953708649" x2="378.6875" y2="79.85039953708649" stroke="var(--bs-border-color)" stroke-dasharray="8" stroke-linecap="butt" class="apexcharts-gridline"></line><line x1="0" y1="119.77559930562973" x2="378.6875" y2="119.77559930562973" stroke="var(--bs-border-color)" stroke-dasharray="8" stroke-linecap="butt" class="apexcharts-gridline"></line></g><g class="apexcharts-gridlines-vertical"></g><line x1="0" y1="159.70079907417298" x2="378.6875" y2="159.70079907417298" stroke="transparent" stroke-dasharray="0" stroke-linecap="butt"></line><line x1="0" y1="1" x2="0" y2="159.70079907417298" stroke="transparent" stroke-dasharray="0" stroke-linecap="butt"></line></g>
+                                                <g class="apexcharts-grid-borders"><line x1="0" y1="0" x2="378.6875" y2="0" stroke="var(--bs-border-color)" stroke-dasharray="8" stroke-linecap="butt" class="apexcharts-gridline"></line><line x1="0" y1="159.70079907417298" x2="378.6875" y2="159.70079907417298" stroke="var(--bs-border-color)" stroke-dasharray="8" stroke-linecap="butt" class="apexcharts-gridline"></line></g>
+                                                <g class="apexcharts-area-series apexcharts-plot-series">
+                                                    <g class="apexcharts-series" zIndex="0" seriesName="series-1" data:longestSeries="true" rel="1" data:realIndex="0">
+                                                        <path d="M 0 115.78307932877541C 22.090104166666663 115.78307932877541 41.024479166666666 79.85039953708649 63.11458333333333 79.85039953708649C 85.20468749999999 79.85039953708649 104.1390625 111.79055935192109 126.22916666666666 111.79055935192109C 148.31927083333332 111.79055935192109 167.2536458333333 31.9401598148346 189.34374999999997 31.9401598148346C 211.43385416666663 31.9401598148346 230.36822916666665 95.82047944450379 252.45833333333331 95.82047944450379C 274.5484375 95.82047944450379 293.48281249999997 59.88779965281486 315.57291666666663 59.88779965281486C 337.6630208333333 59.88779965281486 356.5973958333333 83.84291951394081 378.68749999999994 83.84291951394081C 378.68749999999994 83.84291951394081 378.68749999999994 83.84291951394081 378.68749999999994 159.70079907417298 L 0 159.70079907417298z" fill="url(#SvgjsLinearGradient1032)" fill-opacity="1" stroke="none" stroke-opacity="1" stroke-linecap="butt" stroke-width="0" stroke-dasharray="0" class="apexcharts-area" index="0" clip-path="url(#gridRectMaskgfiqjjxek)" pathTo="M 0 115.78307932877541C 22.090104166666663 115.78307932877541 41.024479166666666 79.85039953708649 63.11458333333333 79.85039953708649C 85.20468749999999 79.85039953708649 104.1390625 111.79055935192109 126.22916666666666 111.79055935192109C 148.31927083333332 111.79055935192109 167.2536458333333 31.9401598148346 189.34374999999997 31.9401598148346C 211.43385416666663 31.9401598148346 230.36822916666665 95.82047944450379 252.45833333333331 95.82047944450379C 274.5484375 95.82047944450379 293.48281249999997 59.88779965281486 315.57291666666663 59.88779965281486C 337.6630208333333 59.88779965281486 356.5973958333333 83.84291951394081 378.68749999999994 83.84291951394081C 378.68749999999994 83.84291951394081 378.68749999999994 83.84291951394081 378.68749999999994 159.70079907417298 L 0 159.70079907417298z" pathFrom="M 0 159.70079907417298 L 0 159.70079907417298 L 63.11458333333333 159.70079907417298 L 126.22916666666666 159.70079907417298 L 189.34374999999997 159.70079907417298 L 252.45833333333331 159.70079907417298 L 315.57291666666663 159.70079907417298 L 378.68749999999994 159.70079907417298z"></path>
+                                                        <path d="M 0 115.78307932877541C 22.090104166666663 115.78307932877541 41.024479166666666 79.85039953708649 63.11458333333333 79.85039953708649C 85.20468749999999 79.85039953708649 104.1390625 111.79055935192109 126.22916666666666 111.79055935192109C 148.31927083333332 111.79055935192109 167.2536458333333 31.9401598148346 189.34374999999997 31.9401598148346C 211.43385416666663 31.9401598148346 230.36822916666665 95.82047944450379 252.45833333333331 95.82047944450379C 274.5484375 95.82047944450379 293.48281249999997 59.88779965281486 315.57291666666663 59.88779965281486C 337.6630208333333 59.88779965281486 356.5973958333333 83.84291951394081 378.68749999999994 83.84291951394081" fill="none" fill-opacity="1" stroke="var(--bs-primary)" stroke-opacity="1" stroke-linecap="butt" stroke-width="3" stroke-dasharray="0" class="apexcharts-area" index="0" clip-path="url(#gridRectMaskgfiqjjxek)" pathTo="M 0 115.78307932877541C 22.090104166666663 115.78307932877541 41.024479166666666 79.85039953708649 63.11458333333333 79.85039953708649C 85.20468749999999 79.85039953708649 104.1390625 111.79055935192109 126.22916666666666 111.79055935192109C 148.31927083333332 111.79055935192109 167.2536458333333 31.9401598148346 189.34374999999997 31.9401598148346C 211.43385416666663 31.9401598148346 230.36822916666665 95.82047944450379 252.45833333333331 95.82047944450379C 274.5484375 95.82047944450379 293.48281249999997 59.88779965281486 315.57291666666663 59.88779965281486C 337.6630208333333 59.88779965281486 356.5973958333333 83.84291951394081 378.68749999999994 83.84291951394081" pathFrom="M 0 159.70079907417298 L 0 159.70079907417298 L 63.11458333333333 159.70079907417298 L 126.22916666666666 159.70079907417298 L 189.34374999999997 159.70079907417298 L 252.45833333333331 159.70079907417298 L 315.57291666666663 159.70079907417298 L 378.68749999999994 159.70079907417298" fill-rule="evenodd"></path>
+                                                        <g class="apexcharts-series-markers-wrap apexcharts-hidden-element-shown" data:realIndex="0">
+                                                            <g class="" clip-path="url(#gridRectMarkerMaskgfiqjjxek)">
+                                                                <path d="M -1, 115.78307932877541
+           m -6, 0
+           a 6,6 0 1,0 12,0
+           a 6,6 0 1,0 -12,0" fill="transparent" fill-opacity="1" stroke="transparent" stroke-opacity="0.9" stroke-linecap="butt" stroke-width="4" stroke-dasharray="0" cx="-1" cy="115.78307932877541" shape="circle" class="apexcharts-marker no-pointer-events wfpsf1gkd" rel="0" j="0" index="0" default-marker-size="6"></path>
+                                                                <path d="M 62.11458333333333, 79.85039953708649
+           m -6, 0
+           a 6,6 0 1,0 12,0
+           a 6,6 0 1,0 -12,0" fill="transparent" fill-opacity="1" stroke="transparent" stroke-opacity="0.9" stroke-linecap="butt" stroke-width="4" stroke-dasharray="0" cx="62.11458333333333" cy="79.85039953708649" shape="circle" class="apexcharts-marker no-pointer-events wmac2u78f" rel="1" j="1" index="0" default-marker-size="6"></path>
+                                                            </g>
+                                                            <g class="" clip-path="url(#gridRectMarkerMaskgfiqjjxek)">
+                                                                <path d="M 125.22916666666666, 111.79055935192109
+           m -6, 0
+           a 6,6 0 1,0 12,0
+           a 6,6 0 1,0 -12,0" fill="transparent" fill-opacity="1" stroke="transparent" stroke-opacity="0.9" stroke-linecap="butt" stroke-width="4" stroke-dasharray="0" cx="125.22916666666666" cy="111.79055935192109" shape="circle" class="apexcharts-marker no-pointer-events wo80tn1jk" rel="2" j="2" index="0" default-marker-size="6"></path>
+                                                            </g>
+                                                            <g class="" clip-path="url(#gridRectMarkerMaskgfiqjjxek)">
+                                                                <path d="M 188.34374999999997, 31.9401598148346
+           m -6, 0
+           a 6,6 0 1,0 12,0
+           a 6,6 0 1,0 -12,0" fill="transparent" fill-opacity="1" stroke="transparent" stroke-opacity="0.9" stroke-linecap="butt" stroke-width="4" stroke-dasharray="0" cx="188.34374999999997" cy="31.9401598148346" shape="circle" class="apexcharts-marker no-pointer-events wfr363uvd" rel="3" j="3" index="0" default-marker-size="6"></path>
+                                                            </g>
+                                                            <g class="" clip-path="url(#gridRectMarkerMaskgfiqjjxek)">
+                                                                <path d="M 251.45833333333331, 95.82047944450379
+           m -6, 0
+           a 6,6 0 1,0 12,0
+           a 6,6 0 1,0 -12,0" fill="transparent" fill-opacity="1" stroke="transparent" stroke-opacity="0.9" stroke-linecap="butt" stroke-width="4" stroke-dasharray="0" cx="251.45833333333331" cy="95.82047944450379" shape="circle" class="apexcharts-marker no-pointer-events wjkz3571k" rel="4" j="4" index="0" default-marker-size="6"></path>
+                                                            </g>
+                                                            <g class="" clip-path="url(#gridRectMarkerMaskgfiqjjxek)">
+                                                                <path d="M 314.57291666666663, 59.88779965281486
+           m -6, 0
+           a 6,6 0 1,0 12,0
+           a 6,6 0 1,0 -12,0" fill="transparent" fill-opacity="1" stroke="transparent" stroke-opacity="0.9" stroke-linecap="butt" stroke-width="4" stroke-dasharray="0" cx="314.57291666666663" cy="59.88779965281486" shape="circle" class="apexcharts-marker no-pointer-events w1sehnxqf" rel="5" j="5" index="0" default-marker-size="6"></path>
+                                                            </g>
+                                                            <g class="" clip-path="url(#gridRectMarkerMaskgfiqjjxek)">
+                                                                <path d="M 377.68749999999994, 83.84291951394081
+           m -6, 0
+           a 6,6 0 1,0 12,0
+           a 6,6 0 1,0 -12,0" fill="var(--bs-white)" fill-opacity="1" stroke="var(--bs-primary)" stroke-opacity="0.9" stroke-linecap="butt" stroke-width="4" stroke-dasharray="0" cx="377.68749999999994" cy="83.84291951394081" shape="circle" class="apexcharts-marker no-pointer-events wfu3s9ij8" rel="6" j="6" index="0" default-marker-size="6"></path>
+                                                            </g>
+                                                        </g>
+                                                    </g>
+                                                    <g class="apexcharts-datalabels" data:realIndex="0"></g>
+                                                </g>
+                                                <line x1="0" y1="0" x2="378.6875" y2="0" stroke="#b6b6b6" stroke-dasharray="0" stroke-width="1" stroke-linecap="butt" class="apexcharts-ycrosshairs"></line>
+                                                <line x1="0" y1="0" x2="378.6875" y2="0" stroke="#b6b6b6" stroke-dasharray="0" stroke-width="0" stroke-linecap="butt" class="apexcharts-ycrosshairs-hidden"></line>
+                                                <g class="apexcharts-xaxis" transform="translate(0, 0)"><g class="apexcharts-xaxis-texts-g" transform="translate(0, -4)"><text x="0" y="187.70079907417298" text-anchor="middle" dominant-baseline="auto" font-size="13px" font-family="Helvetica, Arial, sans-serif" font-weight="400" fill="var(--bs-secondary-color)" class="apexcharts-text apexcharts-xaxis-label " style="font-family: Helvetica, Arial, sans-serif;"><tspan>Jan</tspan><title>Jan</title></text><text x="63.11458333333333" y="187.70079907417298" text-anchor="middle" dominant-baseline="auto" font-size="13px" font-family="Helvetica, Arial, sans-serif" font-weight="400" fill="var(--bs-secondary-color)" class="apexcharts-text apexcharts-xaxis-label " style="font-family: Helvetica, Arial, sans-serif;"><tspan>Feb</tspan><title>Feb</title></text><text x="126.22916666666667" y="187.70079907417298" text-anchor="middle" dominant-baseline="auto" font-size="13px" font-family="Helvetica, Arial, sans-serif" font-weight="400" fill="var(--bs-secondary-color)" class="apexcharts-text apexcharts-xaxis-label " style="font-family: Helvetica, Arial, sans-serif;"><tspan>Mar</tspan><title>Mar</title></text><text x="189.34375000000003" y="187.70079907417298" text-anchor="middle" dominant-baseline="auto" font-size="13px" font-family="Helvetica, Arial, sans-serif" font-weight="400" fill="var(--bs-secondary-color)" class="apexcharts-text apexcharts-xaxis-label " style="font-family: Helvetica, Arial, sans-serif;"><tspan>Apr</tspan><title>Apr</title></text><text x="252.45833333333334" y="187.70079907417298" text-anchor="middle" dominant-baseline="auto" font-size="13px" font-family="Helvetica, Arial, sans-serif" font-weight="400" fill="var(--bs-secondary-color)" class="apexcharts-text apexcharts-xaxis-label " style="font-family: Helvetica, Arial, sans-serif;"><tspan>May</tspan><title>May</title></text><text x="315.57291666666663" y="187.70079907417298" text-anchor="middle" dominant-baseline="auto" font-size="13px" font-family="Helvetica, Arial, sans-serif" font-weight="400" fill="var(--bs-secondary-color)" class="apexcharts-text apexcharts-xaxis-label " style="font-family: Helvetica, Arial, sans-serif;"><tspan>Jun</tspan><title>Jun</title></text><text x="378.68749999999994" y="187.70079907417298" text-anchor="middle" dominant-baseline="auto" font-size="13px" font-family="Helvetica, Arial, sans-serif" font-weight="400" fill="var(--bs-secondary-color)" class="apexcharts-text apexcharts-xaxis-label " style="font-family: Helvetica, Arial, sans-serif;"><tspan>Jul</tspan><title>Jul</title></text></g></g>
+                                                <g class="apexcharts-yaxis-annotations"></g>
+                                                <g class="apexcharts-xaxis-annotations"></g>
+                                                <g class="apexcharts-point-annotations"></g>
+                                            </g>
+                                            <rect width="0" height="0" x="0" y="0" rx="0" ry="0" opacity="1" stroke-width="0" stroke="none" stroke-dasharray="0" fill="#fefefe" class="apexcharts-zoom-rect"></rect>
+                                            <rect width="0" height="0" x="0" y="0" rx="0" ry="0" opacity="1" stroke-width="0" stroke="none" stroke-dasharray="0" fill="#fefefe" class="apexcharts-selection-rect"></rect>
+                                        </svg><div class="apexcharts-tooltip apexcharts-theme-light"><div class="apexcharts-tooltip-title" style="font-family: Helvetica, Arial, sans-serif; font-size: 12px;"></div><div class="apexcharts-tooltip-series-group apexcharts-tooltip-series-group-0" style="order: 1;"><span class="apexcharts-tooltip-marker" style="background-color: var(--bs-primary);"></span><div class="apexcharts-tooltip-text" style="font-family: Helvetica, Arial, sans-serif; font-size: 12px;"><div class="apexcharts-tooltip-y-group"><span class="apexcharts-tooltip-text-y-label"></span><span class="apexcharts-tooltip-text-y-value"></span></div><div class="apexcharts-tooltip-goals-group"><span class="apexcharts-tooltip-text-goals-label"></span><span class="apexcharts-tooltip-text-goals-value"></span></div><div class="apexcharts-tooltip-z-group"><span class="apexcharts-tooltip-text-z-label"></span><span class="apexcharts-tooltip-text-z-value"></span></div></div></div></div><div class="apexcharts-xaxistooltip apexcharts-xaxistooltip-bottom apexcharts-theme-light"><div class="apexcharts-xaxistooltip-text" style="font-family: Helvetica, Arial, sans-serif; font-size: 12px;"></div></div><div class="apexcharts-yaxistooltip apexcharts-yaxistooltip-0 apexcharts-yaxistooltip-left apexcharts-theme-light"><div class="apexcharts-yaxistooltip-text"></div></div>
+                                    </div>
+                                </div>
+                                <div class="d-flex align-items-center justify-content-center mt-6 gap-3">
+                                    <div class="flex-shrink-0">
+                                        <div id="expensesOfWeek" style="min-height: 58px;">
+                                            <div id="apexchartsx4zs6kky" class="apexcharts-canvas apexchartsx4zs6kky apexcharts-theme-" style="width: 60px; height: 58px;">
+                                                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" class="apexcharts-svg" xmlns:data="ApexChartsNS" transform="translate(0, 0)" width="60" height="58">
+                                                    <foreignObject x="0" y="0" width="60" height="58">
+                                                        <div class="apexcharts-legend" xmlns="http://www.w3.org/1999/xhtml"></div><style type="text/css">
+                                                                                                                                      .apexcharts-flip-y {
+                                                                                                                                          transform: scaleY(-1) translateY(-100%);
+                                                                                                                                          transform-origin: top;
+                                                                                                                                          transform-box: fill-box;
+                                                                                                                                      }
+
+                                                                                                                                      .apexcharts-flip-x {
+                                                                                                                                          transform: scaleX(-1);
+                                                                                                                                          transform-origin: center;
+                                                                                                                                          transform-box: fill-box;
+                                                                                                                                      }
+
+                                                                                                                                      .apexcharts-legend {
+                                                                                                                                          display: flex;
+                                                                                                                                          overflow: auto;
+                                                                                                                                          padding: 0 10px;
+                                                                                                                                      }
+
+                                                                                                                                          .apexcharts-legend.apexcharts-legend-group-horizontal {
+                                                                                                                                              flex-direction: column;
+                                                                                                                                          }
+
+                                                                                                                                      .apexcharts-legend-group {
+                                                                                                                                          display: flex;
+                                                                                                                                      }
+
+                                                                                                                                      .apexcharts-legend-group-vertical {
+                                                                                                                                          flex-direction: column-reverse;
+                                                                                                                                      }
+
+                                                                                                                                      .apexcharts-legend.apx-legend-position-bottom, .apexcharts-legend.apx-legend-position-top {
+                                                                                                                                          flex-wrap: wrap
+                                                                                                                                      }
+
+                                                                                                                                      .apexcharts-legend.apx-legend-position-right, .apexcharts-legend.apx-legend-position-left {
+                                                                                                                                          flex-direction: column;
+                                                                                                                                          bottom: 0;
+                                                                                                                                      }
+
+                                                                                                                                      .apexcharts-legend.apx-legend-position-bottom.apexcharts-align-left, .apexcharts-legend.apx-legend-position-top.apexcharts-align-left, .apexcharts-legend.apx-legend-position-right, .apexcharts-legend.apx-legend-position-left {
+                                                                                                                                          justify-content: flex-start;
+                                                                                                                                          align-items: flex-start;
+                                                                                                                                      }
+
+                                                                                                                                      .apexcharts-legend.apx-legend-position-bottom.apexcharts-align-center, .apexcharts-legend.apx-legend-position-top.apexcharts-align-center {
+                                                                                                                                          justify-content: center;
+                                                                                                                                          align-items: center;
+                                                                                                                                      }
+
+                                                                                                                                      .apexcharts-legend.apx-legend-position-bottom.apexcharts-align-right, .apexcharts-legend.apx-legend-position-top.apexcharts-align-right {
+                                                                                                                                          justify-content: flex-end;
+                                                                                                                                          align-items: flex-end;
+                                                                                                                                      }
+
+                                                                                                                                      .apexcharts-legend-series {
+                                                                                                                                          cursor: pointer;
+                                                                                                                                          line-height: normal;
+                                                                                                                                          display: flex;
+                                                                                                                                          align-items: center;
+                                                                                                                                      }
+
+                                                                                                                                      .apexcharts-legend-text {
+                                                                                                                                          position: relative;
+                                                                                                                                          font-size: 14px;
+                                                                                                                                      }
+
+                                                                                                                                          .apexcharts-legend-text *, .apexcharts-legend-marker * {
+                                                                                                                                              pointer-events: none;
+                                                                                                                                          }
+
+                                                                                                                                      .apexcharts-legend-marker {
+                                                                                                                                          position: relative;
+                                                                                                                                          display: flex;
+                                                                                                                                          align-items: center;
+                                                                                                                                          justify-content: center;
+                                                                                                                                          cursor: pointer;
+                                                                                                                                          margin-right: 1px;
+                                                                                                                                      }
+
+                                                                                                                                      .apexcharts-legend-series.apexcharts-no-click {
+                                                                                                                                          cursor: auto;
+                                                                                                                                      }
+
+                                                                                                                                      .apexcharts-legend .apexcharts-hidden-zero-series, .apexcharts-legend .apexcharts-hidden-null-series {
+                                                                                                                                          display: none !important;
+                                                                                                                                      }
+
+                                                                                                                                      .apexcharts-inactive-legend {
+                                                                                                                                          opacity: 0.45;
+                                                                                                                                      }
+                                                        </style>
+                                                    </foreignObject>
+                                                    <g class="apexcharts-inner apexcharts-graphical" transform="translate(-10, -10)"><defs><clipPath id="gridRectMaskx4zs6kky"><rect width="80" height="85" x="0" y="0" rx="0" ry="0" opacity="1" stroke-width="0" stroke="none" stroke-dasharray="0" fill="#fff"></rect></clipPath><clipPath id="gridRectBarMaskx4zs6kky"><rect width="86" height="91" x="-3" y="-3" rx="0" ry="0" opacity="1" stroke-width="0" stroke="none" stroke-dasharray="0" fill="#fff"></rect></clipPath><clipPath id="gridRectMarkerMaskx4zs6kky"><rect width="80" height="85" x="0" y="0" rx="0" ry="0" opacity="1" stroke-width="0" stroke="none" stroke-dasharray="0" fill="#fff"></rect></clipPath><clipPath id="forecastMaskx4zs6kky"></clipPath><clipPath id="nonForecastMaskx4zs6kky"></clipPath></defs><g class="apexcharts-radialbar"><g><g class="apexcharts-tracks"><g class="apexcharts-radialbar-track apexcharts-track" rel="1"><path d="M 40 19.336585365853654 A 20.663414634146346 20.663414634146346 0 1 1 39.9963935538176 19.336585680575453 " fill="none" fill-opacity="1" stroke="var(--bs-border-color)" stroke-opacity="1" stroke-linecap="round" stroke-width="4.760097560975613" stroke-dasharray="0" class="apexcharts-radialbar-area" id="apexcharts-radialbarTrack-0" data:pathOrig="M 40 19.336585365853654 A 20.663414634146346 20.663414634146346 0 1 1 39.9963935538176 19.336585680575453 "></path></g></g><g><g class="apexcharts-series apexcharts-radial-series" seriesName="series-1" rel="1" data:realIndex="0"><path d="M 40 19.336585365853654 A 20.663414634146346 20.663414634146346 0 1 1 23.28294639915962 52.1456503839557 " fill="none" fill-opacity="0.85" stroke="var(--bs-primary)" stroke-opacity="1" stroke-linecap="round" stroke-width="4.907317073170734" stroke-dasharray="0" class="apexcharts-radialbar-area apexcharts-radialbar-slice-0" data:angle="234" data:value="65" index="0" j="0" data:pathOrig="M 40 19.336585365853654 A 20.663414634146346 20.663414634146346 0 1 1 23.28294639915962 52.1456503839557 "></path></g><circle r="16.283365853658538" cx="40" cy="40" class="apexcharts-radialbar-hollow" fill="transparent"></circle><g class="apexcharts-datalabels-group" transform="translate(0, 0) scale(1)" style="opacity: 1;"><text x="40" y="45" text-anchor="middle" dominant-baseline="auto" font-size="12px" font-family="var(--bs-font-family-base)" font-weight="400" fill="var(--bs-body-color)" class="apexcharts-text apexcharts-datalabel-value" style="font-family: var(--bs-font-family-base);">$65</text></g></g></g></g><line x1="0" y1="0" x2="80" y2="0" stroke="#b6b6b6" stroke-dasharray="0" stroke-width="1" stroke-linecap="butt" class="apexcharts-ycrosshairs"></line><line x1="0" y1="0" x2="80" y2="0" stroke="#b6b6b6" stroke-dasharray="0" stroke-width="0" stroke-linecap="butt" class="apexcharts-ycrosshairs-hidden"></line></g>
+                                                    <g class="apexcharts-datalabels-group" transform="translate(0, 0) scale(1)"></g>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <h6 class="mb-0">Income this week</h6>
+                                        <small>$39k less than last week</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--/ Expense Overview -->
+            <!-- Transactions -->
+            <div class="col-md-6 col-lg-4 order-2 mb-6">
+                <div class="card h-100">
+                    <div class="card-header d-flex align-items-center justify-content-between">
+                        <h5 class="card-title m-0 me-2">Transactions</h5>
+                        <div class="dropdown">
+                            <button class="btn text-body-secondary p-0" type="button" id="transactionID" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="icon-base bx bx-dots-vertical-rounded icon-lg"></i>
+                            </button>
+                            <div class="dropdown-menu dropdown-menu-end" aria-labelledby="transactionID">
+                                <a class="dropdown-item" href="javascript:void(0);">Last 28 Days</a>
+                                <a class="dropdown-item" href="javascript:void(0);">Last Month</a>
+                                <a class="dropdown-item" href="javascript:void(0);">Last Year</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body pt-4">
+                        <ul class="p-0 m-0">
+                            <li class="d-flex align-items-center mb-6">
+                                <div class="avatar flex-shrink-0 me-3">
+                                    <img src="~/projetemasi/assets/img/icons/unicons/paypal.png" alt="User" class="rounded">
+                                </div>
+                                <div class="d-flex w-100 flex-wrap align-items-center justify-content-between gap-2">
+                                    <div class="me-2">
+                                        <small class="d-block">Paypal</small>
+                                        <h6 class="fw-normal mb-0">Send money</h6>
+                                    </div>
+                                    <div class="user-progress d-flex align-items-center gap-2">
+                                        <h6 class="fw-normal mb-0">+82.6</h6>
+                                        <span class="text-body-secondary">USD</span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="d-flex align-items-center mb-6">
+                                <div class="avatar flex-shrink-0 me-3">
+                                    <img src="~/projetemasi/assets/img/icons/unicons/wallet.png" alt="User" class="rounded">
+                                </div>
+                                <div class="d-flex w-100 flex-wrap align-items-center justify-content-between gap-2">
+                                    <div class="me-2">
+                                        <small class="d-block">Wallet</small>
+                                        <h6 class="fw-normal mb-0">Mac'D</h6>
+                                    </div>
+                                    <div class="user-progress d-flex align-items-center gap-2">
+                                        <h6 class="fw-normal mb-0">+270.69</h6>
+                                        <span class="text-body-secondary">USD</span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="d-flex align-items-center mb-6">
+                                <div class="avatar flex-shrink-0 me-3">
+                                    <img src="~/projetemasi/assets/img/icons/unicons/chart.png" alt="User" class="rounded">
+                                </div>
+                                <div class="d-flex w-100 flex-wrap align-items-center justify-content-between gap-2">
+                                    <div class="me-2">
+                                        <small class="d-block">Transfer</small>
+                                        <h6 class="fw-normal mb-0">Refund</h6>
+                                    </div>
+                                    <div class="user-progress d-flex align-items-center gap-2">
+                                        <h6 class="fw-normal mb-0">+637.91</h6>
+                                        <span class="text-body-secondary">USD</span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="d-flex align-items-center mb-6">
+                                <div class="avatar flex-shrink-0 me-3">
+                                    <img src="~/projetemasi/assets/img/icons/unicons/cc-primary.png" alt="User" class="rounded">
+                                </div>
+                                <div class="d-flex w-100 flex-wrap align-items-center justify-content-between gap-2">
+                                    <div class="me-2">
+                                        <small class="d-block">Credit Card</small>
+                                        <h6 class="fw-normal mb-0">Ordered Food</h6>
+                                    </div>
+                                    <div class="user-progress d-flex align-items-center gap-2">
+                                        <h6 class="fw-normal mb-0">-838.71</h6>
+                                        <span class="text-body-secondary">USD</span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="d-flex align-items-center mb-6">
+                                <div class="avatar flex-shrink-0 me-3">
+                                    <img src="~/projetemasi/assets/img/icons/unicons/wallet.png" alt="User" class="rounded">
+                                </div>
+                                <div class="d-flex w-100 flex-wrap align-items-center justify-content-between gap-2">
+                                    <div class="me-2">
+                                        <small class="d-block">Wallet</small>
+                                        <h6 class="fw-normal mb-0">Starbucks</h6>
+                                    </div>
+                                    <div class="user-progress d-flex align-items-center gap-2">
+                                        <h6 class="fw-normal mb-0">+203.33</h6>
+                                        <span class="text-body-secondary">USD</span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="d-flex align-items-center">
+                                <div class="avatar flex-shrink-0 me-3">
+                                    <img src="~/projetemasi/assets/img/icons/unicons/cc-warning.png" alt="User" class="rounded">
+                                </div>
+                                <div class="d-flex w-100 flex-wrap align-items-center justify-content-between gap-2">
+                                    <div class="me-2">
+                                        <small class="d-block">Mastercard</small>
+                                        <h6 class="fw-normal mb-0">Ordered Food</h6>
+                                    </div>
+                                    <div class="user-progress d-flex align-items-center gap-2">
+                                        <h6 class="fw-normal mb-0">-92.45</h6>
+                                        <span class="text-body-secondary">USD</span>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!--/ Transactions -->
+        </div>
+

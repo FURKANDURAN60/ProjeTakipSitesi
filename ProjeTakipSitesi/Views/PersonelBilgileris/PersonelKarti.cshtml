@@ -1,0 +1,74 @@
+﻿@model IEnumerable<ProjeTakipSitesi.Models.Personel.PersonelBilgileri>
+
+@{
+    ViewBag.Title = "PersonelKarti";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<style>
+    .custom-card {
+        background-color: #f8f9fc; /* çok açık mor-gri tonu */
+        border-radius: 12px;
+        transition: all 0.2s ease-in-out;
+    }
+
+        .custom-card:hover {
+            box-shadow: 0 0 10px rgba(80, 80, 150, 0.1);
+        }
+
+    .card-header {
+        font-size: 14px;
+    }
+
+    .fa-ul {
+        padding-left: 1.25rem;
+    }
+
+</style>
+<section class="content">
+    <div class="card card-solid border-0 shadow-none">
+        <div class="card-body pb-0">
+            <div class="row g-4">
+                @foreach (var item in Model)
+                {
+                    <div class="col-12 col-sm-6 col-md-4 d-flex align-items-stretch">
+                        <div class="card custom-card flex-fill border-0 shadow-sm">
+                            <div class="card-header bg-transparent text-primary fw-semibold border-bottom-0">
+                                @item.Departman
+                            </div>
+                            <div class="card-body pt-2">
+                                <div class="d-flex">
+                                    <div class="flex-grow-1">
+                                        <h5 class="fw-bold mb-1">@item.AdSoyad</h5>
+                                        <p class="text-muted mb-2"><strong>Hakkında:</strong> @item.Gorev</p>
+                                        <ul class="fa-ul text-muted ps-3 mb-0">
+                                            <li class="mb-1">
+                                                <span class="fa-li"><i class="bx bx-envelope"></i></span> Mail: @item.Eposta
+                                            </li>
+                                            <li>
+                                                <span class="fa-li"><i class="bx bx-phone"></i></span> Telefon: @item.TelNo
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="ms-3 text-center">
+                                        <img src="@item.PersonelGorseli" alt="user-avatar" class="rounded-circle border" style="height:90px; width:90px; object-fit:cover;">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-footer bg-transparent border-top-0 text-end">
+                                <a href="mailto:@item.Eposta" class="btn btn-sm btn-outline-primary me-1">
+                                    <i class="bx bx-envelope me-1"></i> Mail
+                                </a>
+                                <a href="tel:@item.TelNo" class="btn btn-sm btn-outline-primary me-1">
+                                    <i class="bx bx-phone me-1"></i> Ara
+                                </a>
+                                <a href="https://wa.me/@("90" + item.TelNo.Substring(1))" target="_blank" class="btn btn-sm btn-outline-success">
+                                    <i class="bx bxl-whatsapp me-1"></i> Mesaj
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                }
+            </div>
+        </div>
+    </div>
+</section>

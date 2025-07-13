@@ -1,0 +1,80 @@
+﻿@model ProjeTakipSitesi.Models.ProjeTakip.PersonelProjeleri
+@{
+    ViewBag.Title = "Create";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<!-- jQuery kütüphanesi eklendi -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<form action="/PersonelProjeleris/Create" method="post">
+    <div class="form-group">
+        <label>Proje Başlığı</label>
+        <input class="form-control" name="ProjeBaslik" type="text" placeholder="Lütfen Proje Başlığını Giriniz!" />
+    </div>
+    <div class="form-group">
+        <label>Proje Açıklaması</label>
+        <input class="form-control" name="ProjeAciklama" type="text" placeholder="Lütfen Proje Açıklamasını Giriniz!" />
+    </div>
+    <div class="col-md-6">
+        <label>Öncelik Durumu</label>
+        <div class="input-group input-group-merge">
+            <span id="basic-icon-default-company2" class="input-group-text"><i class="icon-base bx bx-buildings"></i></span>
+            <select name="OncelikDurumu" class="form-control" required>
+                <option value="" selected disabled>Öncelik Durumu Seçiniz</option>
+                <option value="Yüksek Öncelikli">Yüksek Öncelikli</option>
+                <option value="Orta Öncelikli">Orta Öncelikli</option>
+                <option value="Düşük Öncelikli">Düşük Öncelikli</option>
+            </select>
+        </div>
+    </div>
+    <div id="insert-section">
+        <div id="personel-select-1" class="personel-select">
+            <div class="form-group">
+                @Html.DropDownList("PersonelBilgileriId", null, htmlAttributes: new { @class = "form-control" })
+                <button type="button" onclick="PersonelEkle()" class="btn btn-sm btn-success">
+                    <i class="bx bx-plus"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="mt-2">
+        <button type="submit" class="btn btn-primary me-2">Proje Oluştur</button>
+        <a href="/PersonelProjeleris/Index/" class="btn btn-outline-secondary">Proje Listesine Geri Dön</a>
+    </div>
+</form>
+
+<script>
+    var personelCounter = 1;
+
+    function PersonelEkle() {
+        personelCounter++;
+        var parentDiv = $("#insert-section");
+
+        // Yeni personel seçimi div'i oluştur
+        var newSelectDiv = $(`
+            <div id="personel-select-${personelCounter}" class="personel-select">
+                <div class="form-group">
+                    @Html.DropDownList("PersonelBilgileriId", null, htmlAttributes: new { @class = "form-control" })
+                    <button type="button" onclick="PersonelEkle()" class="btn btn-sm btn-success">
+                        <i class="bx bx-plus"></i>
+                    </button>
+                    <button type="button" onclick="PersonelSil(this)" class="btn btn-sm btn-danger">
+                        <i class="bx bx-minus"></i>
+                    </button>
+                </div>
+            </div>
+        `);
+
+        // Yeni div'i ekle
+        parentDiv.append(newSelectDiv);
+    }
+
+    function PersonelSil(button) {
+        if ($('.personel-select').length > 1) {
+            $(button).closest('.personel-select').remove();
+        } else {
+            alert("En az bir personel seçimi bulunmalıdır!");
+        }
+    }
+</script>
