@@ -1,4 +1,4 @@
-﻿@model IEnumerable<ProjeTakipSitesi.Models.Personel.PersonelBilgileri>
+@model IEnumerable<ProjeTakipSitesi.Models.Personel.PersonelBilgileri>
 @{
     ViewBag.Title = "Index";
     Layout = "~/Views/Shared/_Layout.cshtml";
@@ -76,12 +76,20 @@
                         </td>
 
                         <td>
-                            <a href="/PersonelBilgileris/Edit/@item.PersonelBilgileriId" class="btn btn-success"> <span class="tf-icons bx bx-edit"></span></a>
-                            <a href="/PersonelBilgileris/Details/@item.PersonelBilgileriId" class="btn btn-primary"><span class="tf-icons bx bx-detail"></span></a>
-                            <a href="/PersonelBilgileris/Delete/@item.PersonelBilgileriId" class="btn btn-danger" style="position:absolute"><span class="tf-icons bx bx-trash"></span></a>
-                            @*<a href="/PersonelBilgileris/HareketFöyü/@item.PersonelBilgileriId" class="btn btn-warning"><span class="tf-icons bx bx-history"></span></a>*@
-
+                            <div class="d-flex gap-1">
+                                <a href="/PersonelBilgileris/Edit/@item.PersonelBilgileriId" class="btn custom-purple">
+                                    <span class="tf-icons bx bx-edit"></span>
+                                </a>
+                                <a href="/PersonelBilgileris/Details/@item.PersonelBilgileriId" class="btn custom-purple">
+                                    <span class="tf-icons bx bx-detail"></span>
+                                </a>
+                                <a href="/PersonelBilgileris/Delete/@item.PersonelBilgileriId" class="btn custom-purple">
+                                    <span class="tf-icons bx bx-trash"></span>
+                                </a>
+                            </div>
                         </td>
+
+
                         <td>
                             @Html.DisplayFor(modelItem => item.PozisyonAciklama)
                         </td>
@@ -122,6 +130,30 @@
     .dt-buttons {
         margin-bottom: 10px;
     }
+
+    /* Aksiyon butonlarını mor temaya uydur */
+    .custom-purple {
+        background-color: #696cff !important;
+        color: white !important;
+        border: 1px solid #696cff !important;
+        padding: 6px 10px;
+        border-radius: 4px;
+        transition: 0.2s;
+    }
+
+        .custom-purple:hover {
+            background-color: #5f63f2 !important;
+            border-color: #5f63f2 !important;
+            color: white !important;
+        }
+
+        .custom-purple:focus,
+        .custom-purple:active {
+            background-color: #5449cc !important;
+            border-color: #5449cc !important;
+            color: white !important;
+            box-shadow: 0 0 0 0.2rem rgba(105, 108, 255, 0.25) !important;
+        }
 </style>
 
 <script>
