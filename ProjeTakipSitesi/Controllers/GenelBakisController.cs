@@ -61,7 +61,73 @@ namespace ProjeTakipSitesi.Controllers
             var enCokTamamlananPersonel = db.PersonelBilgileris.FirstOrDefault(p => p.PersonelBilgileriId == enCokTamamlananPersonelId);
             ViewBag.EnCokTamamlayanPersonelBilgisi = enCokTamamlananPersonel.AdSoyad;
 
+
+            int enCokProjeTamamlayanPersonelProjeSayisi = personelTamamlanmisProjeSayisi[enCokTamamlananPersonelId];
+            ViewBag.EnCokProjeTamamlayanPersonelinProjeSayisi = enCokProjeTamamlayanPersonelProjeSayisi;
             return View();
         }
+
+
+        public ActionResult GenelIstatistik()
+        {
+            var personeller = db.PersonelBilgileris.ToList();
+            var personelProjeleri = db.PersonelProjeleris.ToList();
+            var tamamlananProjeSayisi = new Dictionary<int, int>();
+            var tamamlanmayanProjeSayisi = new Dictionary<int, int>();
+            var toplamProjeSayisi = new Dictionary<int, int>();
+
+            foreach(var personel in personeller)
+            {
+                int tamamlananProje = 0;
+                int tamamlanmayanProje = 0;
+                int toplamProje = 0;
+
+                foreach(var proje in personelProjeleri)
+                {
+                    if (proje.PersonelBilgileris.Contains(personel))
+                    {
+                        toplamProje++;
+                        if (proje.TamamlanmaDurumu)
+                        {
+                            tamamlananProje++;
+                        }
+                        else
+                        {
+                            tamamlanmayanProje++;
+                        }
+                    }
+                }
+                tamamlananProjeSayisi[personel.PersonelBilgileriId] = tamamlananProje;
+                tamamlanmayanProjeSayisi[personel.PersonelBilgileriId] = tamamlanmayanProje;
+                toplamProjeSayisi[personel.PersonelBilgileriId] = toplamProje;
+
+            }
+
+            ViewBag.TamamlananProjeSayisi = tamamlananProjeSayisi;
+            ViewBag.TamamlanmayanProjeSayisi = tamamlanmayanProjeSayisi;
+            ViewBag.ToplamProjeSayisi = toplamProjeSayisi;
+
+            int projeSayisi = db.PersonelProjeleris.Count();
+            ViewBag.ProjeSayisi = projeSayisi;
+
+            int personelSayisi = db.PersonelBilgileris.Count();
+            ViewBag.PersonelSayisi = personelSayisi;
+
+            int tamamlanmisProje = db.PersonelProjeleris.Where(p => p.TamamlanmaDurumu == true).Count();
+            ViewBag.TamamlanmisProje = tamamlanmisProje;
+
+            int tamamlanmamisProje = db.PersonelProjeleris.Where(p => p.TamamlanmaDurumu == false).Count();
+            ViewBag.TamamlanmamisProje = tamamlanmamisProje;
+
+            var basarisizYuksekOncelikliProjeler = db.PersonelProjeleris.Where(p => p.OncelikDurumu == "Yüksek Öncelikli" && p.TamamlanmaDurumu == false).Count();
+            ViewBag.YuksekveBasarisiz = basarisizYuksekOncelikliProjeler;
+
+            var basarisizOrtaOncelikliProjeler = db.PersonelProjeleris.Where(p => p.OncelikDurumu == "Orta Öncelikli" && p.TamamlanmaDurumu == false).Count();
+            ViewBag.OrtaveBasarisiz = basarisizOrtaOncelikliProjeler;
+
+
+            return View(personeller);
+        }
+
     }
 }
